@@ -12,6 +12,6 @@ FuchsiaGoodRodHouse_Object:
 	def_bg_events
 
 	def_object_events
-	object_event  5,  3, SPRITE_FISHING_GURU, STAY, RIGHT, TEXT_FUCHSIAGOODRODHOUSE_FISHING_GURU
+	;object_event  5,  3, SPRITE_FISHING_GURU, STAY, RIGHT, TEXT_FUCHSIAGOODRODHOUSE_FISHING_GURU
 
 	def_warps_to FUCHSIA_GOOD_ROD_HOUSE
