@@ -107,7 +107,7 @@ MapHeaderPointers::
 	dw SSAnne2FRooms_h
 	dw SSAnneB1FRooms_h
 	dw CeruleanOldRodHouse_h
-	dw LancesRoom_h ; UNUSED_MAP_6A
+	dw CeladonGoodRodHouse_h
 	dw LancesRoom_h ; UNUSED_MAP_6B
 	dw VictoryRoad1F_h
 	dw LancesRoom_h ; UNUSED_MAP_6D
