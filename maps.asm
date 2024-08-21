@@ -1224,3 +1224,8 @@ INCLUDE "data/maps/headers/CeruleanOldRodHouse.asm"
 INCLUDE "scripts/CeruleanOldRodHouse.asm"
 INCLUDE "data/maps/objects/CeruleanOldRodHouse.asm"
 CeruleanOldRodHouse_Blocks: INCBIN "maps/CeruleanOldRodHouse.blk"
+
+INCLUDE "data/maps/headers/CeladonGoodRodHouse.asm"
+INCLUDE "scripts/CeladonGoodRodHouse.asm"
+INCLUDE "data/maps/objects/CeladonGoodRodHouse.asm"
+CeladonGoodRodHouse_Blocks: INCBIN "maps/CeladonGoodRodHouse.blk"
