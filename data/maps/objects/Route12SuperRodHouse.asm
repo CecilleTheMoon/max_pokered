@@ -11,6 +11,6 @@ Route12SuperRodHouse_Object:
 	def_bg_events
 
 	def_object_events
-	object_event  2,  4, SPRITE_FISHING_GURU, STAY, RIGHT, TEXT_ROUTE12SUPERRODHOUSE_FISHING_GURU
+	;object_event  2,  4, SPRITE_FISHING_GURU, STAY, RIGHT, TEXT_ROUTE12SUPERRODHOUSE_FISHING_GURU
 
 	def_warps_to ROUTE_12_SUPER_ROD_HOUSE
