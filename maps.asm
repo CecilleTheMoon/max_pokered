@@ -698,7 +698,7 @@ VermilionOldRodHouse_Blocks:
 Route12SuperRodHouse_Blocks:
 Daycare_Blocks: INCBIN "maps/Daycare.blk"
 
-FuchsiaGoodRodHouse_Blocks: INCBIN "maps/FuchsiaGoodRodHouse.blk"
+FuchsiaSuperRodHouse_Blocks: INCBIN "maps/FuchsiaSuperRodHouse.blk"
 
 
 SECTION "Maps 12", ROMX
@@ -723,9 +723,9 @@ INCLUDE "scripts/CeladonMart2F.asm"
 INCLUDE "data/maps/objects/CeladonMart2F.asm"
 CeladonMart2F_Blocks: INCBIN "maps/CeladonMart2F.blk"
 
-INCLUDE "data/maps/headers/FuchsiaGoodRodHouse.asm"
-INCLUDE "scripts/FuchsiaGoodRodHouse.asm"
-INCLUDE "data/maps/objects/FuchsiaGoodRodHouse.asm"
+INCLUDE "data/maps/headers/FuchsiaSuperRodHouse.asm"
+INCLUDE "scripts/FuchsiaSuperRodHouse.asm"
+INCLUDE "data/maps/objects/FuchsiaSuperRodHouse.asm"
 
 INCLUDE "data/maps/headers/Daycare.asm"
 INCLUDE "scripts/Daycare.asm"
@@ -1219,3 +1219,13 @@ INCLUDE "data/maps/headers/AgathasRoom.asm"
 INCLUDE "scripts/AgathasRoom.asm"
 INCLUDE "data/maps/objects/AgathasRoom.asm"
 AgathasRoom_Blocks: INCBIN "maps/AgathasRoom.blk"
+
+INCLUDE "data/maps/headers/CeruleanOldRodHouse.asm"
+INCLUDE "scripts/CeruleanOldRodHouse.asm"
+INCLUDE "data/maps/objects/CeruleanOldRodHouse.asm"
+CeruleanOldRodHouse_Blocks: INCBIN "maps/CeruleanOldRodHouse.blk"
+
+INCLUDE "data/maps/headers/CeladonGoodRodHouse.asm"
+INCLUDE "scripts/CeladonGoodRodHouse.asm"
+INCLUDE "data/maps/objects/CeladonGoodRodHouse.asm"
+CeladonGoodRodHouse_Blocks: INCBIN "maps/CeladonGoodRodHouse.blk"

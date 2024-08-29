@@ -106,8 +106,8 @@ MapHeaderPointers::
 	dw SSAnne1FRooms_h
 	dw SSAnne2FRooms_h
 	dw SSAnneB1FRooms_h
-	dw LancesRoom_h ; UNUSED_MAP_69
-	dw LancesRoom_h ; UNUSED_MAP_6A
+	dw CeruleanOldRodHouse_h
+	dw CeladonGoodRodHouse_h
 	dw LancesRoom_h ; UNUSED_MAP_6B
 	dw VictoryRoad1F_h
 	dw LancesRoom_h ; UNUSED_MAP_6D
@@ -165,7 +165,7 @@ MapHeaderPointers::
 	dw SeafoamIslandsB3F_h
 	dw SeafoamIslandsB4F_h
 	dw VermilionOldRodHouse_h
-	dw FuchsiaGoodRodHouse_h
+	dw FuchsiaSuperRodHouse_h
 	dw PokemonMansion1F_h
 	dw CinnabarGym_h
 	dw CinnabarLab_h

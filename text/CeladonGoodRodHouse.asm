@@ -1,4 +1,4 @@
-_FuchsiaGoodRodHouseFishingGuruText::
+_CeladonGoodRodHouseFishingGuruText::
 	text "I'm the FISHING"
 	line "GURU's older"
 	cont "brother!"
@@ -10,7 +10,7 @@ _FuchsiaGoodRodHouseFishingGuruText::
 	line "fish?"
 	done
 
-_FuchsiaGoodRodHouseFishingGuruReceivedGoodRodText::
+_CeladonGoodRodHouseFishingGuruReceivedGoodRodText::
 	text "Grand! I like"
 	line "your style!"
 
@@ -23,12 +23,12 @@ _FuchsiaGoodRodHouseFishingGuruReceivedGoodRodText::
 	text "!@"
 	text_end
 
-_FuchsiaGoodRodHouseFishingGuruThatsSoDisappointingText::
+_CeladonGoodRodHouseFishingGuruThatsSoDisappointingText::
 	text "Oh... That's so"
 	line "disappointing..."
 	done
 
-_FuchsiaGoodRodHouseFishingGuruHowAreTheFishText::
+_CeladonGoodRodHouseFishingGuruHowAreTheFishText::
 	text "Hello there,"
 	line "<PLAYER>!"
 
@@ -36,7 +36,7 @@ _FuchsiaGoodRodHouseFishingGuruHowAreTheFishText::
 	line "biting?"
 	done
 
-_FuchsiaGoodRodHouseFishingGuruNoRoomText::
+_CeladonGoodRodHouseFishingGuruNoRoomText::
 	text "Oh no!"
 
 	para "You have no room"

@@ -1,11 +1,11 @@
-FuchsiaGoodRodHouse_Script:
+CeladonGoodRodHouse_Script:
 	jp EnableAutoTextBoxDrawing
 
-FuchsiaGoodRodHouse_TextPointers:
+CeladonGoodRodHouse_TextPointers:
 	def_text_pointers
-	dw_const FuchsiaGoodRodHouseFishingGuruText, TEXT_FUCHSIAGOODRODHOUSE_FISHING_GURU
+	dw_const CeladonGoodRodHouseFishingGuruText, TEXT_CELADONGOODRODHOUSE_FISHING_GURU
 
-FuchsiaGoodRodHouseFishingGuruText:
+CeladonGoodRodHouseFishingGuruText:
 	text_asm
 	ld a, [wStatusFlags1]
 	bit BIT_GOT_GOOD_ROD, a
@@ -36,11 +36,11 @@ FuchsiaGoodRodHouseFishingGuruText:
 	jp TextScriptEnd
 
 .Text:
-	text_far _FuchsiaGoodRodHouseFishingGuruText
+	text_far _CeladonGoodRodHouseFishingGuruText
 	text_end
 
 .ReceivedGoodRodText:
-	text_far _FuchsiaGoodRodHouseFishingGuruReceivedGoodRodText
+	text_far _CeladonGoodRodHouseFishingGuruReceivedGoodRodText
 	sound_get_item_1
 	text_end
 
@@ -55,13 +55,13 @@ FuchsiaGoodRodHouseFishingGuruText:
 	done
 
 .ThatsSoDisappointingText:
-	text_far _FuchsiaGoodRodHouseFishingGuruThatsSoDisappointingText
+	text_far _CeladonGoodRodHouseFishingGuruThatsSoDisappointingText
 	text_end
 
 .HowAreTheFishText:
-	text_far _FuchsiaGoodRodHouseFishingGuruHowAreTheFishText
+	text_far _CeladonGoodRodHouseFishingGuruHowAreTheFishText
 	text_end
 
 .NoRoomText:
-	text_far _FuchsiaGoodRodHouseFishingGuruNoRoomText
+	text_far _CeladonGoodRodHouseFishingGuruNoRoomText
 	text_end

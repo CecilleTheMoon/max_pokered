@@ -106,8 +106,8 @@ MapHeaderBanks::
 	db BANK(SSAnne1FRooms_h)
 	db BANK(SSAnne2FRooms_h)
 	db BANK(SSAnneB1FRooms_h)
-	db $1D ; UNUSED_MAP_69
-	db $1D ; UNUSED_MAP_6A
+	db BANK(CeruleanOldRodHouse_h)
+	db BANK(CeladonGoodRodHouse_h)
 	db $1D ; UNUSED_MAP_6B
 	db BANK(VictoryRoad1F_h)
 	db $1D ; UNUSED_MAP_6D
@@ -165,7 +165,7 @@ MapHeaderBanks::
 	db BANK(SeafoamIslandsB3F_h)
 	db BANK(SeafoamIslandsB4F_h)
 	db BANK(VermilionOldRodHouse_h)
-	db BANK(FuchsiaGoodRodHouse_h)
+	db BANK(FuchsiaSuperRodHouse_h)
 	db BANK(PokemonMansion1F_h)
 	db BANK(CinnabarGym_h)
 	db BANK(CinnabarLab_h)

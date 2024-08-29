@@ -124,8 +124,8 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const SS_ANNE_1F_ROOMS,              12,  8 ; $66
 	map_const SS_ANNE_2F_ROOMS,              12,  8 ; $67
 	map_const SS_ANNE_B1F_ROOMS,             12,  8 ; $68
-	map_const UNUSED_MAP_69,                  0,  0 ; $69
-	map_const UNUSED_MAP_6A,                  0,  0 ; $6A
+	map_const CERULEAN_OLD_ROD_HOUSE,         4,  4 ; $69
+	map_const CELADON_GOOD_ROD_HOUSE,         4,  4 ; $6A
 	map_const UNUSED_MAP_6B,                  0,  0 ; $6B
 	map_const VICTORY_ROAD_1F,               10,  9 ; $6C
 	map_const UNUSED_MAP_6D,                  0,  0 ; $6D
@@ -183,7 +183,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const SEAFOAM_ISLANDS_B3F,           15,  9 ; $A1
 	map_const SEAFOAM_ISLANDS_B4F,           15,  9 ; $A2
 	map_const VERMILION_OLD_ROD_HOUSE,        4,  4 ; $A3
-	map_const FUCHSIA_GOOD_ROD_HOUSE,         4,  4 ; $A4
+	map_const FUCHSIA_SUPER_ROD_HOUSE,        4,  4 ; $A4
 	map_const POKEMON_MANSION_1F,            15, 14 ; $A5
 	map_const CINNABAR_GYM,                  10,  9 ; $A6
 	map_const CINNABAR_LAB,                   9,  4 ; $A7
