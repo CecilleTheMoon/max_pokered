@@ -41,98 +41,98 @@ GoodRodData:
 
 .Group1:
 	db 4
-	db 13, GOLDEEN
 	db 15, GOLDEEN
-	db 14, TENTACOOL
+	db 17, GOLDEEN
 	db 16, TENTACOOL
+	db 18, TENTACOOL
 
 .Group2:
 	db 4
-	db 13, GOLDEEN
-	db 15, GOLDEEN
-	db 12, POLIWAG
-	db 14, POLIWAG
-
-.Group3:
-	db 5
-	db 12, GOLDEEN
-	db 14, GOLDEEN
-	db 16, GOLDEEN
-	db 15, PSYDUCK
-	db 17, PSYDUCK
-
-.Group4:
-	db 5
-	db 14, GOLDEEN
-	db 14, GOLDEEN
-	db 16, GOLDEEN
-	db 16, GOLDEEN
-	db 17, KRABBY
-
-.Group5:
-	db 5
-	db 16, TENTACOOL
-	db 16, TENTACOOL
-	db 18, TENTACOOL
-	db 18, TENTACOOL
-	db 18, KRABBY
-
-
-.Group6:
-	db 4
-	db 16, TENTACOOL
-	db 18, TENTACOOL
-	db 15, POLIWAG
-	db 15, POLIWAG
-
-.Group7:
-	db 5
 	db 15, GOLDEEN
 	db 17, GOLDEEN
 	db 14, POLIWAG
 	db 16, POLIWAG
-	db 15, HORSEA
+
+.Group3:
+	db 5
+	db 14, GOLDEEN
+	db 16, GOLDEEN
+	db 18, GOLDEEN
+	db 17, PSYDUCK
+	db 19, PSYDUCK
+
+.Group4:
+	db 5
+	db 16, GOLDEEN
+	db 16, GOLDEEN
+	db 18, GOLDEEN
+	db 18, GOLDEEN
+	db 19, KRABBY
+
+.Group5:
+	db 5
+	db 18, TENTACOOL
+	db 18, TENTACOOL
+	db 20, TENTACOOL
+	db 20, TENTACOOL
+	db 20, KRABBY
+
+
+.Group6:
+	db 4
+	db 18, TENTACOOL
+	db 20, TENTACOOL
+	db 17, POLIWAG
+	db 17, POLIWAG
+
+.Group7:
+	db 5
+	db 17, GOLDEEN
+	db 19, GOLDEEN
+	db 16, POLIWAG
+	db 18, POLIWAG
+	db 17, HORSEA
 
 .Group8:
 	db 10
-	db 20, GOLDEEN
-	db 20, GOLDEEN
-	db 20, GOLDEEN
 	db 22, GOLDEEN
 	db 22, GOLDEEN
-	db 18, POLIWAG
+	db 22, GOLDEEN
+	db 24, GOLDEEN
+	db 24, GOLDEEN
 	db 20, POLIWAG
-	db 21, KRABBY
+	db 22, POLIWAG
 	db 23, KRABBY
-	db 25, HORSEA
+	db 25, KRABBY
+	db 26, HORSEA
 
 .Group9:
 	db 5
-	db 20, TENTACOOL
-	db 20, TENTACOOL
 	db 22, TENTACOOL
 	db 22, TENTACOOL
-	db 20, HORSEA
+	db 24, TENTACOOL
+	db 24, TENTACOOL
+	db 22, HORSEA
 
 .Group10:
 	db 5
-	db 22, SLOWPOKE
 	db 24, SLOWPOKE
 	db 26, SLOWPOKE
-	db 24, SEEL
-	db 24, SEEL
+	db 28, SLOWPOKE
+	db 26, SEEL
+	db 26, SEEL
 
 .Group11:
 	db 5
-	db 20, POLIWAG
-	db 20, POLIWAG
 	db 22, POLIWAG
 	db 22, POLIWAG
-	db 22, HORSEA
+	db 24, POLIWAG
+	db 24, POLIWAG
+	db 24, HORSEA
 
 .Group12:
 	db 4
-	db 40, SEAKING
-	db 40, TENTACRUEL
-	db 40, KINGLER
-	db 40, SEADRA
+	db 45, SEAKING
+	db 45, TENTACRUEL
+	db 45, KINGLER
+	db 45, SEADRA
