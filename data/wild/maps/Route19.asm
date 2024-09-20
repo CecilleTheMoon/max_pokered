@@ -1,16 +1,18 @@
-SeaRoutesWildMons:
+Route19WildMons:
 	def_grass_wildmons 0 ; encounter rate
 	end_grass_wildmons
 
-	def_water_wildmons 5 ; encounter rate
-	db  5, TENTACOOL
-	db 10, TENTACOOL
-	db 15, TENTACOOL
-	db  5, TENTACOOL
-	db 10, TENTACOOL
-	db 15, TENTACOOL
-	db 20, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACOOL
-	db 40, TENTACOOL
+	def_water_wildmons 12 ; encounter rate
+	db 31, TENTACOOL
+	db 31, GOLDEEN
+	db 33, TENTACOOL
+	db 33, GOLDEEN
+	db 33, TENTACOOL
+	db 33, GOLDEEN
+	db 31, HORSEA
+	db 37, TENTACRUEL
+	db 33, HORSEA
+	db 37, SEAKING
+	db 35, HORSEA
+	db 37, SEADRA
 	end_water_wildmons
