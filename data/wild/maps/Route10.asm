@@ -1,27 +1,44 @@
 Route10WildMons:
-	def_grass_wildmons 15 ; encounter rate
-	db 16, VOLTORB
-	db 16, SPEAROW
-	db 14, VOLTORB
-IF DEF(_RED)
-	db 11, EKANS
-	db 13, SPEAROW
-	db 15, EKANS
-	db 17, VOLTORB
+	def_grass_wildmons 25 ; encounter rate
+	db 16, RATTATA
 	db 17, SPEAROW
-	db 13, EKANS
+IF DEF(_RED)
 	db 17, EKANS
+	db 18, VOLTORB
+	db 17, EKANS
+	db 18, VOLTORB
+	db 18, SPEAROW
+	db 19, EKANS
+	db 19, VOLTORB
+	db 20, RATICATE
+	db 13, BULBASAUR
+	db 19, VOLTORB
 ENDC
 IF DEF(_BLUE)
-	db 11, SANDSHREW
-	db 13, SPEAROW
-	db 15, SANDSHREW
-	db 17, VOLTORB
-	db 17, SPEAROW
-	db 13, SANDSHREW
 	db 17, SANDSHREW
+	db 18, VOLTORB
+	db 17, SANDSHREW
+	db 18, VOLTORB
+	db 18, SPEAROW
+	db 19, SANDSHREW
+	db 19, VOLTORB
+	db 20, RATICATE
+	db 13, BULBASAUR
+	db 19, VOLTORB
 ENDC
 	end_grass_wildmons
 
-	def_water_wildmons 0 ; encounter rate
+	def_water_wildmons 12 ; encounter rate
+	db 28, GOLDEEN
+	db 28, TENTACOOL
+	db 30, GOLDEEN
+	db 29, TENTACOOL
+	db 28, HORSEA
+	db 29, TENTACOOL
+	db 30, HORSEA
+	db 30, TENTACOOL
+	db 35, SEAKING
+	db 34, TENTACRUEL
+	db 17, SQUIRTLE
+	db 36, TENTACRUEL
 	end_water_wildmons
