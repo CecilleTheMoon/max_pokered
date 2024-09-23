@@ -2836,17 +2836,20 @@ IsNextTileShoreOrWater:
 	ld de, 1
 	call IsInArray
 	jr nc, .notShoreOrWater
+	ld hl, WaterTile
 	ld a, [wCurMapTileset]
 	cp SHIP_PORT ; Vermilion Dock tileset
-	ld a, [wTileInFrontOfPlayer] ; tile in front of player
 	jr z, .skipShoreTiles ; if it's the Vermilion Dock tileset
-	cp $48 ; eastern shore tile in Safari Zone
-	jr z, .shoreOrWater
-	cp $32 ; usual eastern shore tile
-	jr z, .shoreOrWater
+	cp GYM ; eastern shore tile in Safari Zone
+	jr z, .skipShoreTiles
+	cp DOJO ; usual eastern shore tile
+	jr z, .skipShoreTiles
+	ld hl, ShoreTiles
 .skipShoreTiles
-	cp $14 ; water tile
-	jr z, .shoreOrWater
+	ld a, [wTileInFrontOfPlayer]
+	ld de, $1
+	call IsInArray
+	jr c, .shoreOrWater
 .notShoreOrWater
 	scf
 	ret
@@ -2854,7 +2857,17 @@ IsNextTileShoreOrWater:
 	and a
 	ret
 
-INCLUDE "data/tilesets/water_tilesets.asm"
+; shre tiles
+ShoreTiles:
+	db $48, $32
+WaterTile:
+	db $14
+	db $ff ; terminator
+
+; tilesets with water
+WaterTilesets:
+	db OVERWORLD, FOREST, DOJO, GYM, SHIP, SHIP_PORT, CAVERN, FACILITY, PLATEAU
+	db $ff ; terminator
 
 ReadGoodRodData:
 ; return e = 2 if no fish on this map
