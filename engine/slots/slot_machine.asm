@@ -66,6 +66,7 @@ MainSlotMachineLoop:
 	ld hl, BetHowManySlotMachineText
 	call PrintText
 	call SaveScreenTilesToBuffer1
+	call SlotMachine_SetFlags ; moved here
 .loop
 	ld a, A_BUTTON | B_BUTTON
 	ld [wMenuWatchedKeys], a
@@ -109,7 +110,6 @@ MainSlotMachineLoop:
 	call LoadScreenTilesFromBuffer1
 	call SlotMachine_SubtractBetFromPlayerCoins
 	call SlotMachine_LightBalls
-	call SlotMachine_SetFlags
 	ld a, 4
 	ld hl, wSlotMachineWheel1SlipCounter
 	ld [hli], a
@@ -179,13 +179,13 @@ SlotMachine_SetFlags:
 	and a
 	jr nz, .allowMatches
 	call Random
-	and a
-	jr z, .setAllowMatchesCounter ; 1/256 (~0.4%) chance
+	cp $03
+	jr c, .setAllowMatchesCounter ; 3/256 increasing chance to 1.2%
 	ld b, a
 	ld a, [wSlotMachineSevenAndBarModeChance]
 	cp b
 	jr c, .allowSevenAndBarMatches
-	ld a, 210
+	ld a, 200 ; slightly increase odds matches
 	cp b
 	jr c, .allowMatches ; 55/256 (~21.5%) chance
 	ld [hl], 0
@@ -304,7 +304,7 @@ SlotMachine_StopWheel1Early:
 .loop
 	ld a, [hli]
 	cp HIGH(SLOTS7)
-	jr c, .stopWheel ; condition never true
+	jr z, .stopWheel
 	dec c
 	jr nz, .loop
 	ret
@@ -329,9 +329,13 @@ SlotMachine_StopWheel2Early:
 ; player's odds.
 .sevenAndBarMode
 	call SlotMachine_FindWheel1Wheel2Matches
+	ret nz
 	ld a, [de]
-	cp HIGH(SLOTSBAR) + 1
-	ret nc
+	cp (SLOTSBAR >> 8) + 1
+	jr c, .stopWheel
+	ld a, [wSlotMachineFlags]
+	bit 6, a
+	ret z
 .stopWheel
 	xor a
 	ld [wSlotMachineWheel2SlipCounter], a
@@ -506,16 +510,16 @@ SlotRewardPointers:
 	dw SlotReward15Text
 
 SlotReward300Text:
-	db "300@"
+	db "777@"
 
 SlotReward100Text:
-	db "100@"
+	db "300@"
 
 SlotReward8Text:
-	db "8@"
+	db "10@"
 
 SlotReward15Text:
-	db "15@"
+	db "30@"
 
 NotThisTimeText:
 	text_far _NotThisTimeText
@@ -569,7 +573,7 @@ SlotReward8Func:
 	dec [hl]
 .skip
 	ld b, $2
-	ld de, 8
+	ld de, 10
 	ret
 
 SlotReward15Func:
@@ -580,7 +584,7 @@ SlotReward15Func:
 	dec [hl]
 .skip
 	ld b, $4
-	ld de, 15
+	ld de, 30
 	ret
 
 SlotReward100Func:
@@ -589,7 +593,7 @@ SlotReward100Func:
 	xor a
 	ld [wSlotMachineFlags], a
 	ld b, $8
-	ld de, 100
+	ld de, 300
 	ret
 
 SlotReward300Func:
@@ -605,7 +609,7 @@ SlotReward300Func:
 .skip
 	ld [wSlotMachineAllowMatchesCounter], a
 	ld b, $14
-	ld de, 300
+	ld de, 777
 	ret
 
 YeahText:
@@ -850,7 +854,7 @@ LoadSlotMachineTiles:
 	call DisableLCD
 	ld hl, SlotMachineTiles2
 	ld de, vChars0
-	ld bc, $1c tiles ; should be SlotMachineTiles2End - SlotMachineTiles2, or $18 tiles
+	ld bc, SlotMachineTiles2End - SlotMachineTiles2
 	ld a, BANK(SlotMachineTiles2)
 	call FarCopyData2
 	ld hl, SlotMachineTiles1
@@ -860,7 +864,7 @@ LoadSlotMachineTiles:
 	call FarCopyData2
 	ld hl, SlotMachineTiles2
 	ld de, vChars2 tile $25
-	ld bc, $1c tiles ; should be SlotMachineTiles2End - SlotMachineTiles2, or $18 tiles
+	ld bc, SlotMachineTiles2End - SlotMachineTiles2
 	ld a, BANK(SlotMachineTiles2)
 	call FarCopyData2
 	ld hl, SlotMachineMap

@@ -1,17 +1,5 @@
-Route17WildMons:
-	def_grass_wildmons 25 ; encounter rate
-	db 23, SPEAROW
-	db 23, DODUO
-	db 25, SPEAROW
-	db 27, RATICATE
-	db 24, PONYTA
-	db 27, RATICATE
-	db 26, FARFETCHD
-	db 26, PONYTA
-	db 25, DODUO
-	db 27, FEAROW
-	db 25, DODUO
-	db 29, FEAROW
+CeladonCityWildMons:
+	def_grass_wildmons 0 ; encounter rate
 	end_grass_wildmons
 
 	def_water_wildmons 12 ; encounter rate

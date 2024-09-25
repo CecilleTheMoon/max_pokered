@@ -66,6 +66,10 @@ INCLUDE "engine/math/bcd.asm"
 INCLUDE "engine/movie/oak_speech/init_player_data.asm"
 INCLUDE "engine/items/get_bag_item_quantity.asm"
 INCLUDE "engine/overworld/pathfinding.asm"
+
+
+SECTION "bank4", ROMX
+
 INCLUDE "engine/gfx/hp_bar.asm"
 INCLUDE "engine/events/hidden_objects/bookshelves.asm"
 INCLUDE "engine/events/hidden_objects/indigo_plateau_statues.asm"
