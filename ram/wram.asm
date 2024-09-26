@@ -434,10 +434,7 @@ wAILayer2Encouragement:: db
 wPlayerSubstituteHP:: db
 wEnemySubstituteHP:: db
 
-; used for TestBattle (unused in non-debug builds)
-wTestBattlePlayerSelectedMove:: db
-
-	ds 1
+	;ds2 ; we can use this entry in wram for whatever we want now
 
 ; 0=regular, 1=mimic, 2=above message box (relearn, heal pp..)
 wMoveMenuType:: db
