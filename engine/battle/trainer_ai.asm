@@ -385,7 +385,10 @@ KogaAI:
 BlaineAI:
 	cp 25 percent + 1
 	ret nc
-	jp AIUseSuperPotion
+	ld a, 10
+	call AICheckIfHPBelowFraction
+	ret nc
+	jp AIUseHyperPotion
 
 SabrinaAI:
 	cp 25 percent + 1
