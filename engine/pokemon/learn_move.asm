@@ -216,6 +216,8 @@ OneTwoAndText:
 	ld a, $1
 	ld [wMuteAudioAndPauseMusic], a
 	call DelayFrame
+	ld a, [wAudioROMBank]
+	push af
 	ld a, BANK(SFX_Swap_1)
 	ld [wAudioROMBank], a
 	ld [wAudioSavedROMBank], a
