@@ -9,7 +9,6 @@ TypeNames:
 	dw .Rock
 	dw .Bird
 	dw .Bug
-	dw .Ghost
 
 REPT UNUSED_TYPES_END - UNUSED_TYPES
 	dw .Normal
@@ -20,6 +19,7 @@ ENDR
 	dw .Grass
 	dw .Electric
 	dw .Psychic
+	dw .Ghost
 	dw .Ice
 	dw .Dragon
 
