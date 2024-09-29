@@ -323,6 +323,8 @@ WeepinbellPicFront::   INCBIN "gfx/pokemon/front/weepinbell.pic"
 WeepinbellPicBack::    INCBIN "gfx/pokemon/back/weepinbellb.pic"
 VictreebelPicFront::   INCBIN "gfx/pokemon/front/victreebel.pic"
 VictreebelPicBack::    INCBIN "gfx/pokemon/back/victreebelb.pic"
+MewPicFront::          INCBIN "gfx/pokemon/front/mew.pic"
+MewPicBack::           INCBIN "gfx/pokemon/back/mewb.pic"
 
 
 SECTION "Pics 6", ROMX
