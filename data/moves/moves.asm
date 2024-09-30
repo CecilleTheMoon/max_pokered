@@ -175,5 +175,8 @@ Moves:
 	move SUPER_FANG,   SUPER_FANG_EFFECT,            1, NORMAL,       100, 10
 	move SLASH,        NO_ADDITIONAL_EFFECT,        70, NORMAL,       100, 15
 	move SUBSTITUTE,   SUBSTITUTE_EFFECT,            0, NORMAL,       100, 10
+	move DRAGONBREATH, PARALYZE_SIDE_EFFECT2,       70, DRAGON,       100, 20
+	move TWISTER,      FLINCH_SIDE_EFFECT2,         40, DRAGON,       100, 30
+	move OUTRAGE,      THRASH_PETAL_DANCE_EFFECT,  120, DRAGON,       100, 10
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
