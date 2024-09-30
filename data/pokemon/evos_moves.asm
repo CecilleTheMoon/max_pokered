@@ -334,6 +334,7 @@ ExeggcuteEvosMoves:
 	db EVOLVE_ITEM, LEAF_STONE, 1, EXEGGUTOR
 	db 0
 ; Learnset
+	db 7, ABSORB
 	db 25, REFLECT
 	db 28, LEECH_SEED
 	db 32, STUN_SPORE
@@ -1032,7 +1033,7 @@ KrabbyEvosMoves:
 	db EVOLVE_LEVEL, 28, KINGLER
 	db 0
 ; Learnset
-	db 20, VICEGRIP
+	db 20, VISE_GRIP
 	db 25, GUILLOTINE
 	db 30, STOMP
 	db 35, CRABHAMMER
@@ -1615,7 +1616,7 @@ KinglerEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 20, VICEGRIP
+	db 20, VISE_GRIP
 	db 25, GUILLOTINE
 	db 34, STOMP
 	db 42, CRABHAMMER
@@ -1755,8 +1756,8 @@ BulbasaurEvosMoves:
 	db EVOLVE_LEVEL, 16, IVYSAUR
 	db 0
 ; Learnset
-	db 7, LEECH_SEED
-	db 13, VINE_WHIP
+	db 7, VINE_WHIP
+	db 13, LEECH_SEED
 	db 20, POISONPOWDER
 	db 27, RAZOR_LEAF
 	db 34, GROWTH
