@@ -922,9 +922,11 @@ DragoniteEvosMoves:
 ; Learnset
 	db 10, THUNDER_WAVE
 	db 20, AGILITY
-	db 35, SLAM
+	db 30, SLAM
+	db 36, DRAGONBREATH
 	db 45, DRAGON_RAGE
-	db 60, HYPER_BEAM
+	db 61, OUTRAGE
+	db 65, HYPER_BEAM
 	db 0
 
 MissingNo43EvosMoves:
@@ -1114,6 +1116,7 @@ DratiniEvosMoves:
 	db 10, THUNDER_WAVE
 	db 20, AGILITY
 	db 30, SLAM
+	db 32, DRAGONBREATH
 	db 40, DRAGON_RAGE
 	db 50, HYPER_BEAM
 	db 0
@@ -1125,7 +1128,8 @@ DragonairEvosMoves:
 ; Learnset
 	db 10, THUNDER_WAVE
 	db 20, AGILITY
-	db 35, SLAM
+	db 30, SLAM
+	db 36, DRAGONBREATH
 	db 45, DRAGON_RAGE
 	db 55, HYPER_BEAM
 	db 0
