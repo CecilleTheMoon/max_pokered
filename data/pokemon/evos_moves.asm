@@ -360,8 +360,10 @@ GengarEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 29, HYPNOSIS
-	db 38, DREAM_EATER
+	db 24, HYPNOSIS
+	db 29, SHADOW_PUNCH
+	db 38, SHADOW_BALL
+	db 41, DREAM_EATER
 	db 0
 
 NidoranFEvosMoves:
@@ -482,7 +484,8 @@ GastlyEvosMoves:
 	db EVOLVE_LEVEL, 25, HAUNTER
 	db 0
 ; Learnset
-	db 27, HYPNOSIS
+	db 24, HYPNOSIS
+	db 33, SHADOW_BALL
 	db 35, DREAM_EATER
 	db 0
 
@@ -1701,8 +1704,10 @@ HaunterEvosMoves:
 	db EVOLVE_LEVEL, 40, GENGAR
 	db 0
 ; Learnset
-	db 29, HYPNOSIS
-	db 38, DREAM_EATER
+	db 24, HYPNOSIS
+	db 29, SHADOW_PUNCH
+	db 38, SHADOW_BALL
+	db 41, DREAM_EATER
 	db 0
 
 AbraEvosMoves:
