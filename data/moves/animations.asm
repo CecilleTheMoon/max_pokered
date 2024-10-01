@@ -167,6 +167,8 @@ AttackAnimationPointers:
 	dw DragonBreathAnim
 	dw TwisterAnim
 	dw OutrageAnim
+	dw ShadowBallAnim
+	dw ShadowPunchAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -853,6 +855,21 @@ SmokeScreenAnim:
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
 	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
+ShadowBallAnim:
+	battle_anim CONFUSE_RAY, SE_DARK_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_WAVY_SCREEN
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim FIRE_PUNCH, SUBANIM_1_BLOB_TOSS, 1, 6
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 0, 6
+	db -1 ; end
+
+
+ShadowPunchAnim:
+	battle_anim CONFUSE_RAY, SE_DARK_SCREEN_PALETTE
+	battle_anim FIRE_PUNCH, SUBANIM_0_STAR_THRICE, 0, 6
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 
