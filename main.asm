@@ -348,12 +348,15 @@ INCLUDE "engine/events/hidden_items.asm"
 SECTION "bank1E", ROMX
 
 INCLUDE "engine/battle/animations.asm"
-INCLUDE "engine/overworld/cut2.asm"
-INCLUDE "engine/overworld/dust_smoke.asm"
-INCLUDE "gfx/fishing.asm"
 INCLUDE "data/moves/animations.asm"
 INCLUDE "data/battle_anims/subanimations.asm"
 INCLUDE "data/battle_anims/frame_blocks.asm"
+
+SECTION "bank1F" , ROMX
+
+INCLUDE "engine/overworld/cut2.asm"
+INCLUDE "engine/overworld/dust_smoke.asm"
+INCLUDE "gfx/fishing.asm"
 INCLUDE "engine/movie/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 INCLUDE "engine/items/tm_prices.asm"
