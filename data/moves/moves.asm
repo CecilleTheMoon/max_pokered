@@ -178,5 +178,7 @@ Moves:
 	move DRAGONBREATH, PARALYZE_SIDE_EFFECT2,       70, DRAGON,       100, 20
 	move TWISTER,      FLINCH_SIDE_EFFECT2,         40, DRAGON,       100, 30
 	move OUTRAGE,      THRASH_PETAL_DANCE_EFFECT,  120, DRAGON,       100, 10
+	move SHADOW_BALL,  SPECIAL_DOWN_SIDE_EFFECT,    90, GHOST,        100, 10
+	move SHADOW_PUNCH, SWIFT_EFFECT,                60, GHOST,        100, 20
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
