@@ -188,7 +188,10 @@
 	const SAND_TOMB    ; b4
 	const BULLDOZE     ; b5
 	const DRILL_RUN    ; b6
-	const STRUGGLE     ; b7
+	const ICY_WIND     ; b7
+	const ICICLE_SPEAR ; b8
+	const SHEER_COLD   ; b9
+	const STRUGGLE     ; ba
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
