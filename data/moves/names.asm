@@ -171,5 +171,8 @@ MoveNames::
 	li "SHADOW PUNCH"
 	li "MEGAHORN"
 	li "X-SCISSOR"
+	li "SLUDGE BOMB"
+	li "GUNK SHOT"
+	li "CROSS POISON"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
