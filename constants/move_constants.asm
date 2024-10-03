@@ -177,7 +177,10 @@
 	const SHADOW_PUNCH ; a9
 	const MEGAHORN     ; aa
 	const X_SCISSOR    ; ab
-	const STRUGGLE     ; ac
+	const SLUDGE_BOMB  ; ac
+	const GUNK_SHOT    ; ad
+	const CROSS_POISON ; ae
+	const STRUGGLE     ; af
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
