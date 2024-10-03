@@ -174,5 +174,6 @@ MoveNames::
 	li "SLUDGE BOMB"
 	li "GUNK SHOT"
 	li "CROSS POISON"
+	li "EXTREMESPEED"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
