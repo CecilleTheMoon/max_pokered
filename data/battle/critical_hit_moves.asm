@@ -5,4 +5,5 @@ HighCriticalMoves:
 	db CRABHAMMER
 	db SLASH
 	db CROSS_POISON
+	db DRILL_RUN
 	db -1 ; end
