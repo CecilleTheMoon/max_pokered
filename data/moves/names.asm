@@ -169,5 +169,7 @@ MoveNames::
 	li "OUTRAGE"
 	li "SHADOW BALL"
 	li "SHADOW PUNCH"
+	li "MEGAHORN"
+	li "X-SCISSOR"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
