@@ -431,7 +431,7 @@ ArcanineEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 0
+	db 45, EXTREMESPEED
 
 MewEvosMoves:
 ; Evolutions
@@ -938,6 +938,7 @@ DragoniteEvosMoves:
 	db 30, SLAM
 	db 36, DRAGONBREATH
 	db 45, DRAGON_RAGE
+	db 59, EXTREMESPEED
 	db 61, OUTRAGE
 	db 65, HYPER_BEAM
 	db 0
@@ -1760,6 +1761,7 @@ PidgeottoEvosMoves:
 	db 31, WING_ATTACK
 	db 40, AGILITY
 	db 49, MIRROR_MOVE
+	db 53, EXTREMESPEED
 	db 0
 
 PidgeotEvosMoves:
