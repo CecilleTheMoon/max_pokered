@@ -176,6 +176,9 @@ MoveSoundTable:
 	db SFX_BATTLE_2A,          $20, $20 ; GUNK_SHOT
 	db SFX_BATTLE_2A,          $20, $20 ; CROSS_POISON
 	db SFX_BATTLE_25,          $00, $10 ; EXTREMESPEED
+	db SFX_BATTLE_14,          $01, $e0 ; ROCK_TOMB
+	db SFX_BATTLE_36,          $f0, $20 ; ROCK_BLAST
+	db SFX_SUPER_EFFECTIVE,    $20, $c0 ; HEAD_SMASH
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
