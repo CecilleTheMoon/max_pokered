@@ -182,5 +182,8 @@ MoveNames::
 	li "SAND TOMB"
 	li "BULLDOZE"
 	li "DRILL RUN"
+	li "ICY WIND"
+	li "ICICLE SPEAR"
+	li "SHEER COLD"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
