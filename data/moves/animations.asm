@@ -174,6 +174,7 @@ AttackAnimationPointers:
 	dw SludgeBombAnim
 	dw GunkShotAnim
 	dw CrossPoisonAnim
+	dw ExtremeSpeedAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -805,6 +806,16 @@ MeditateAnim:
 AgilityAnim:
 	battle_anim AGILITY, SE_LIGHT_SCREEN_PALETTE
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
+ExtremeSpeedAnim:
+	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
+	battle_anim QUICK_ATTACK, SE_SLIDE_MON_OFF
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim THRASH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
 	db -1 ; end
 
 QuickAttackAnim:
