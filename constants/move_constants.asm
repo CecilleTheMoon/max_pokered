@@ -184,7 +184,11 @@
 	const ROCK_TOMB    ; b0
 	const ROCK_BLAST   ; b1
 	const HEAD_SMASH   ; b2
-	const STRUGGLE     ; b3
+	const MUD_SLAP     ; b3
+	const SAND_TOMB    ; b4
+	const BULLDOZE     ; b5
+	const DRILL_RUN    ; b6
+	const STRUGGLE     ; b7
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
