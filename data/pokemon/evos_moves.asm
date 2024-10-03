@@ -259,6 +259,7 @@ SpearowEvosMoves:
 ; Learnset
 	db 9, LEER
 	db 15, FURY_ATTACK
+	db 19, AIR_CUTTER
 	db 22, MIRROR_MOVE
 	db 29, DRILL_PECK
 	db 36, AGILITY
@@ -606,6 +607,7 @@ FearowEvosMoves:
 ; Learnset
 	db 9, LEER
 	db 15, FURY_ATTACK
+	db 19, AIR_CUTTER
 	db 25, MIRROR_MOVE
 	db 34, DRILL_PECK
 	db 43, AGILITY
@@ -619,9 +621,11 @@ PidgeyEvosMoves:
 	db 5, SAND_ATTACK
 	db 12, QUICK_ATTACK
 	db 19, WHIRLWIND
-	db 28, WING_ATTACK
+	db 21, WING_ATTACK
+	db 29, AERIAL_ACE
 	db 36, AGILITY
 	db 44, MIRROR_MOVE
+	db 51, HURRICANE
 	db 0
 
 SlowpokeEvosMoves:
@@ -926,8 +930,10 @@ FarfetchdEvosMoves:
 ; Learnset
 	db 7, LEER
 	db 15, FURY_ATTACK
+	db 20, AERIAL_ACE
 	db 23, SWORDS_DANCE
 	db 31, AGILITY
+	db 35, AIR_SLASH
 	db 39, SLASH
 	db 0
 
@@ -1021,6 +1027,7 @@ MoltresEvosMoves:
 	db 51, LEER
 	db 55, AGILITY
 	db 60, SKY_ATTACK
+	db 65, HURRICANE
 	db 0
 
 ArticunoEvosMoves:
@@ -1030,6 +1037,7 @@ ArticunoEvosMoves:
 	db 51, BLIZZARD
 	db 55, AGILITY
 	db 60, MIST
+	db 65, HURRICANE
 	db 70, SHEER_COLD
 	db 0
 
@@ -1040,6 +1048,7 @@ ZapdosEvosMoves:
 	db 51, THUNDER
 	db 55, AGILITY
 	db 60, LIGHT_SCREEN
+	db 65, HURRICANE
 	db 0
 
 DittoEvosMoves:
@@ -1368,6 +1377,7 @@ ZubatEvosMoves:
 	db 28, WING_ATTACK
 	db 33, CROSS_POISON
 	db 36, HAZE
+	db 38, AIR_SLASH
 	db 45, GUNK_SHOT
 	db 0
 
@@ -1599,6 +1609,7 @@ GolbatEvosMoves:
 	db 32, WING_ATTACK
 	db 39, CROSS_POISON
 	db 43, HAZE
+	db 45, AIR_SLASH
 	db 51, GUNK_SHOT
 	db 0
 
@@ -1785,10 +1796,11 @@ PidgeottoEvosMoves:
 	db 5, SAND_ATTACK
 	db 12, QUICK_ATTACK
 	db 21, WHIRLWIND
-	db 31, WING_ATTACK
+	db 24, WING_ATTACK
+	db 30, AERIAL_ACE
 	db 40, AGILITY
 	db 49, MIRROR_MOVE
-	db 53, EXTREMESPEED
+	db 54, HURRICANE
 	db 0
 
 PidgeotEvosMoves:
@@ -1798,9 +1810,12 @@ PidgeotEvosMoves:
 	db 5, SAND_ATTACK
 	db 12, QUICK_ATTACK
 	db 21, WHIRLWIND
-	db 31, WING_ATTACK
+	db 24, WING_ATTACK
+	db 30, AERIAL_ACE
 	db 44, AGILITY
 	db 54, MIRROR_MOVE
+	db 58, EXTREMESPEED
+	db 63, HURRICANE
 	db 0
 
 StarmieEvosMoves:
