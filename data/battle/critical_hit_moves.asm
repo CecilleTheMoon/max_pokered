@@ -6,4 +6,5 @@ HighCriticalMoves:
 	db SLASH
 	db CROSS_POISON
 	db DRILL_RUN
+	db AIR_CUTTER
 	db -1 ; end
