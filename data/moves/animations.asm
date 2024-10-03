@@ -171,6 +171,9 @@ AttackAnimationPointers:
 	dw ShadowPunchAnim
 	dw MegahornAnim
 	dw XScissorAnim
+	dw SludgeBombAnim
+	dw GunkShotAnim
+	dw CrossPoisonAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -310,6 +313,13 @@ XScissorAnim:
 	battle_anim SLASH, SUBANIM_0_SLICE, 0, 4
 	battle_anim SLASH, SUBANIM_0_CROSS_SLICE, 0, 4
 	db -1 ; end
+
+CrossPoisonAnim:
+	battle_anim SLASH, SUBANIM_0_SLICE, 0, 4
+	battle_anim SLASH, SUBANIM_0_CROSS_SLICE, 0, 4
+	battle_anim NO_MOVE, SE_SHAKE_SCREEN
+	battle_anim SLUDGE, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+	db - 1 ; end
 
 CutAnim:
 	battle_anim CUT, SE_DARK_SCREEN_FLASH
@@ -977,6 +987,27 @@ SmogAnim:
 	battle_anim LEECH_SEED, SE_DARKEN_MON_PALETTE
 	battle_anim SMOG, SUBANIM_1_CLOUD_TOSS, 1, 6
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
+SludgeBombAnim:
+	battle_anim SLUDGE, SUBANIM_1_BLOB_TOSS, 1, 2
+	battle_anim SLUDGE, SUBANIM_1_BLOB_TOSS, 1, 2
+	battle_anim SLUDGE, SUBANIM_1_BLOB_TOSS, 1, 2
+	battle_anim NO_MOVE, SE_SHAKE_SCREEN
+	battle_anim SLUDGE, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+	db -1 ; end
+
+GunkShotAnim:
+	battle_anim CONFUSE_RAY, SE_DARK_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_WAVY_SCREEN
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim SLUDGE, SUBANIM_1_BLOB_TOSS, 1, 1
+	battle_anim SLUDGE, SUBANIM_1_BLOB_TOSS, 1, 1
+	battle_anim SLUDGE, SUBANIM_1_BLOB_TOSS, 1, 1
+	battle_anim SLUDGE, SUBANIM_1_BLOB_TOSS, 1, 1
+	battle_anim SLUDGE, SUBANIM_1_BLOB_TOSS, 1, 1
+	battle_anim NO_MOVE, SE_SHAKE_SCREEN
+	battle_anim SLUDGE, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
 	db -1 ; end
 
 SludgeAnim:
