@@ -193,5 +193,8 @@ Moves:
 	move SAND_TOMB,    TRAPPING_EFFECT,             35, GROUND,        70, 15
 	move BULLDOZE,     SPEED_DOWN1_EFFECT,          60, GROUND,       100, 20
 	move DRILL_RUN,    NO_ADDITIONAL_EFFECT,        70, GROUND,        95, 15
+	move ICY_WIND,     SPEED_DOWN1_EFFECT,          55, ICE,           95, 20
+	move ICICLE_SPEAR, TWO_TO_FIVE_ATTACKS_EFFECT,  25, ICE,          100, 20
+	move SHEER_COLD,   OHKO_EFFECT,                  1, ICE,           30,  5
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
