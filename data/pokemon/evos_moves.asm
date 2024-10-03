@@ -352,8 +352,10 @@ GrimerEvosMoves:
 	db 33, MINIMIZE
 	db 37, SLUDGE
 	db 42, HARDEN
+	db 45, SLUDGE_BOMB
 	db 48, SCREECH
 	db 55, ACID_ARMOR
+	db 60, GUNK_SHOT
 	db 0
 
 GengarEvosMoves:
@@ -476,6 +478,7 @@ TentacoolEvosMoves:
 	db 27, CONSTRICT
 	db 33, BARRIER
 	db 40, SCREECH
+	db 41, CROSS_POISON
 	db 48, HYDRO_PUMP
 	db 0
 
@@ -539,7 +542,7 @@ PinsirEvosMoves:
 	db 40, SLASH
 	db 48, SWORDS_DANCE
 	db 54, MEGAHORN
-	db 58. GUILLOTINE
+	db 58, GUILLOTINE
 	db 0
 
 TangelaEvosMoves:
@@ -718,6 +721,7 @@ ArbokEvosMoves:
 	db 27, GLARE
 	db 36, SCREECH
 	db 47, ACID
+	db 51, GUNK_SHOT
 	db 0
 
 ParasectEvosMoves:
@@ -824,8 +828,10 @@ KoffingEvosMoves:
 	db 32, SLUDGE
 	db 37, SMOKESCREEN
 	db 40, SELFDESTRUCT
+	db 43, SLUDGE_BOMB
 	db 45, HAZE
-	db 48, EXPLOSION
+	db 50, GUNK_SHOT
+	db 53, EXPLOSION
 	db 0
 
 MissingNo38EvosMoves:
@@ -1337,7 +1343,9 @@ ZubatEvosMoves:
 	db 15, BITE
 	db 21, CONFUSE_RAY
 	db 28, WING_ATTACK
+	db 33, CROSS_POISON
 	db 36, HAZE
+	db 45, GUNK_SHOT
 	db 0
 
 EkansEvosMoves:
@@ -1350,6 +1358,7 @@ EkansEvosMoves:
 	db 24, GLARE
 	db 31, SCREECH
 	db 38, ACID
+	db 46, GUNK_SHOT
 	db 0
 
 ParasEvosMoves:
@@ -1562,7 +1571,9 @@ GolbatEvosMoves:
 	db 15, BITE
 	db 21, CONFUSE_RAY
 	db 32, WING_ATTACK
+	db 39, CROSS_POISON
 	db 43, HAZE
+	db 51, GUNK_SHOT
 	db 0
 
 MewtwoEvosMoves:
@@ -1614,8 +1625,10 @@ MukEvosMoves:
 	db 33, MINIMIZE
 	db 37, SLUDGE
 	db 45, HARDEN
+	db 49, SLUDGE_BOMB
 	db 53, SCREECH
 	db 60, ACID_ARMOR
+	db 64, GUNK_SHOT
 	db 0
 
 MissingNo8AEvosMoves:
@@ -1672,8 +1685,10 @@ WeezingEvosMoves:
 	db 32, SLUDGE
 	db 39, SMOKESCREEN
 	db 43, SELFDESTRUCT
+	db 47, SLUDGE_BOMB
 	db 49, HAZE
-	db 53, EXPLOSION
+	db 55, GUNK_SHOT
+	db 59, EXPLOSION
 	db 0
 
 PersianEvosMoves:
@@ -1803,6 +1818,7 @@ TentacruelEvosMoves:
 	db 27, CONSTRICT
 	db 35, BARRIER
 	db 43, SCREECH
+	db 47, CROSS_POISON
 	db 50, HYDRO_PUMP
 	db 0
 
