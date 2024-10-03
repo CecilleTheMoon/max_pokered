@@ -178,5 +178,9 @@ MoveNames::
 	li "ROCK TOMB"
 	li "ROCK BLAST"
 	li "HEAD SMASH"
+	li "MUD-SLAP"
+	li "SAND TOMB"
+	li "BULLDOZE"
+	li "DRILL RUN"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
