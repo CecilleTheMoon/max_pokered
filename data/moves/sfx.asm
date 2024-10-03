@@ -179,6 +179,10 @@ MoveSoundTable:
 	db SFX_BATTLE_14,          $01, $e0 ; ROCK_TOMB
 	db SFX_BATTLE_36,          $f0, $20 ; ROCK_BLAST
 	db SFX_SUPER_EFFECTIVE,    $20, $c0 ; HEAD_SMASH
+	db SFX_BATTLE_1B,          $01, $a0 ; MUD_SLAP
+	db SFX_BATTLE_1B,          $01, $a0 ; SAND_TOMB
+	db SFX_BATTLE_18,          $00, $80 ; BULLDOZE
+	db SFX_BATTLE_1E,          $00, $60 ; HORN_ATTACK
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
