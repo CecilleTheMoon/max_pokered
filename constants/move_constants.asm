@@ -191,7 +191,11 @@
 	const ICY_WIND     ; b7
 	const ICICLE_SPEAR ; b8
 	const SHEER_COLD   ; b9
-	const STRUGGLE     ; ba
+	const HURRICANE    ; ba
+	const AERIAL_ACE   ; bb
+	const AIR_CUTTER   ; bc
+	const AIR_SLASH    ; bd
+	const STRUGGLE     ; be
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
