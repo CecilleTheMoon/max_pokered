@@ -167,7 +167,7 @@ Moves:
 	move FURY_SWIPES,  TWO_TO_FIVE_ATTACKS_EFFECT,  25, NORMAL,        90, 20
 	move BONEMERANG,   ATTACK_TWICE_EFFECT,         60, GROUND,        90, 10
 	move REST,         HEAL_EFFECT,                  0, PSYCHIC_TYPE, 100, 10
-	move ROCK_SLIDE,   FLINCH_SIDE_EFFECT2,         75, ROCK,          90, 20
+	move ROCK_SLIDE,   FLINCH_SIDE_EFFECT2,         75, ROCK,          90, 15
 	move HYPER_FANG,   FLINCH_SIDE_EFFECT1,         90, NORMAL,        90, 15
 	move SHARPEN,      ATTACK_UP1_EFFECT,            0, NORMAL,       100, 30
 	move CONVERSION,   CONVERSION_EFFECT,            0, NORMAL,       100, 30
@@ -196,5 +196,9 @@ Moves:
 	move ICY_WIND,     SPEED_DOWN1_EFFECT,          55, ICE,           95, 20
 	move ICICLE_SPEAR, TWO_TO_FIVE_ATTACKS_EFFECT,  25, ICE,          100, 20
 	move SHEER_COLD,   OHKO_EFFECT,                  1, ICE,           30,  5
+	move HURRICANE,    CONFUSION_SIDE_EFFECT,      120, FLYING,        85,  5
+	move AERIAL_ACE,   SWIFT_EFFECT,                60, FLYING,       100, 20
+	move AIR_CUTTER,   NO_ADDITIONAL_EFFECT,        55, FLYING,        95, 25
+	move AIR_SLASH,    FLINCH_SIDE_EFFECT2,         75, FLYING,        95, 15
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
