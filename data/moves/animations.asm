@@ -182,6 +182,9 @@ AttackAnimationPointers:
 	dw SandTombAnim
 	dw BulldozeAnim
 	dw DrillRunAnim
+	dw IcyWindAnim
+	dw IcicleSpearAnim
+	dw SheerColdAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -283,6 +286,11 @@ FirePunchAnim:
 	battle_anim NO_MOVE, SUBANIM_1_FLAMES, 1, 6
 	db -1 ; end
 
+IcicleSpearAnim:
+	battle_anim ICE_PUNCH, SUBANIM_0_HORN_JAB_TWICE, 0, 6
+	battle_anim NO_MOVE, SUBANIM_0_ICE_RISE, 0, 12
+	db -1 ; end
+
 IcePunchAnim:
 	battle_anim ICE_PUNCH, SUBANIM_0_STAR_THRICE, 0, 6
 	battle_anim NO_MOVE, SUBANIM_0_ICE_RISE, 0, 16
@@ -343,9 +351,19 @@ WingAttackAnim:
 	battle_anim WING_ATTACK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 
+IcyWindAnim:
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim WHIRLWIND, SE_DARK_SCREEN_FLASH
+	battle_anim WHIRLWIND, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim ICE_BEAM, SUBANIM_0_ICE_RISE, 0, 16
+	db -1 ; end
+
 TwisterAnim:
 	battle_anim WHIRLWIND, SUBANIM_1_TORNADO, 1, 6
-	battle_anim NO_MOVE, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 
 WhirlwindAnim:
@@ -624,6 +642,11 @@ SurfAnim:
 IceBeamAnim:
 	battle_anim ICE_BEAM, SUBANIM_0_BEAM, 0, 3
 	battle_anim NO_MOVE, SUBANIM_0_ICE_RISE, 0, 16
+	db -1 ; end
+
+SheerColdAnim:
+	battle_anim BLIZZARD, SE_FLASH_SCREEN_LONG
+	battle_anim HYDRO_PUMP, SUBANIM_0_ICE_RISE, 0, 16
 	db -1 ; end
 
 BlizzardAnim:
