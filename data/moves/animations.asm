@@ -178,6 +178,10 @@ AttackAnimationPointers:
 	dw RockTombAnim
 	dw RockBlastAnim
 	dw HeadSmashAnim
+	dw MudSlapAnim
+	dw SandTombAnim
+	dw BulldozeAnim
+	dw DrillRunAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -390,13 +394,38 @@ RollingKickAnim:
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 
+MudSlapAnim:
+	battle_anim SAND_ATTACK, SUBANIM_1_SAND, 1, 6
+	battle_anim NO_MOVE, SUBANIM_0_STAR_TWICE, 0, 8
+	db -1 ; end
+
+SandTombAnim:
+	battle_anim SAND_ATTACK, SUBANIM_1_SAND, 1, 6
+	battle_anim NO_MOVE, SUBANIM_0_STAR_TWICE, 0, 6
+	battle_anim CONSTRICT, SUBANIM_0_BIND, 0, 3
+	battle_anim CONSTRICT, SUBANIM_0_BIND, 0, 3
+	db -1 ; end
+
 SandAttackAnim:
 	battle_anim SAND_ATTACK, SUBANIM_1_SAND, 1, 6
+	db -1 ; end
+
+BulldozeAnim:
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim HEADBUTT, SUBANIM_1_STAR_BIG, 1, 6
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
 	db -1 ; end
 
 HeadbuttAnim:
 	battle_anim HEADBUTT, SUBANIM_1_STAR_BIG, 1, 6
 	db -1 ; end
+
+DrillRunAnim:
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim HORN_ATTACK, SUBANIM_0_HORN_JAB_TWICE, 0, 6
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim THRASH, SE_RESET_MON_POSITION
+	db -1; end
 
 HornAttackAnim:
 	battle_anim HORN_ATTACK, SUBANIM_0_HORN_JAB_TWICE, 0, 6
