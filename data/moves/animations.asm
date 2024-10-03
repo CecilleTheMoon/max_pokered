@@ -185,6 +185,10 @@ AttackAnimationPointers:
 	dw IcyWindAnim
 	dw IcicleSpearAnim
 	dw SheerColdAnim
+	dw HurricaneAnim
+	dw AerialAceAnim
+	dw AirCutterAnim
+	dw AirSlashAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -337,9 +341,45 @@ CrossPoisonAnim:
 	battle_anim SLUDGE, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
 	db - 1 ; end
 
+AirCutterAnim:
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim WHIRLWIND, SE_DARK_SCREEN_FLASH
+	battle_anim WHIRLWIND, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim CUT, SUBANIM_0_SLICE, 0, 4
+	db -1 ; end
+
+AirSlashAnim:
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim WHIRLWIND, SE_DARK_SCREEN_FLASH
+	battle_anim WHIRLWIND, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim CUT, SUBANIM_0_SLICE, 0, 2
+	battle_anim CUT, SUBANIM_0_SLICE, 0, 2
+	db -1 ; end
+
 CutAnim:
 	battle_anim CUT, SE_DARK_SCREEN_FLASH
 	battle_anim NO_MOVE, SUBANIM_0_SLICE, 0, 4
+	db -1 ; end
+
+HurricaneAnim:
+	battle_anim LEECH_SEED, SE_DARK_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_SPIRAL_BALLS_INWARD
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim GUST, SUBANIM_1_TORNADO, 1, 6
+	battle_anim BARRAGE, SUBANIM_1_SPHERE_BIG, 1, 1
+	battle_anim NO_MOVE, SE_HIDE_ENEMY_MON_PIC
+	battle_anim SEISMIC_TOSS, SUBANIM_1_SPHERE_BIG_RISE, 1, 2
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim SEISMIC_TOSS, SUBANIM_1_SPHERE_BIG_FALL, 1, 1
+	battle_anim NO_MOVE, SE_SHOW_ENEMY_MON_PIC
+	battle_anim NO_MOVE, SE_SHAKE_SCREEN
 	db -1 ; end
 
 GustAnim:
@@ -887,6 +927,18 @@ ExtremeSpeedAnim:
 	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
 	battle_anim THRASH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	db -1 ; end
+
+AerialAceAnim:
+	battle_anim QUICK_ATTACK, SE_SLIDE_MON_OFF
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim WHIRLWIND, SE_DARK_SCREEN_FLASH
+	battle_anim WHIRLWIND, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim CUT, SUBANIM_0_SLICE, 0, 4
+	battle_anim NO_MOVE, SE_SHOW_MON_PIC
 	db -1 ; end
 
 QuickAttackAnim:
