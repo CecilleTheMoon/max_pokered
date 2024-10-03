@@ -497,7 +497,8 @@ ScytherEvosMoves:
 	db 20, FOCUS_ENERGY
 	db 24, DOUBLE_TEAM
 	db 29, SLASH
-	db 35, SWORDS_DANCE
+	db 34, X_SCISSOR
+	db 39, SWORDS_DANCE
 	db 42, AGILITY
 	db 0
 
@@ -531,12 +532,14 @@ PinsirEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 25, SEISMIC_TOSS
-	db 30, GUILLOTINE
-	db 36, FOCUS_ENERGY
-	db 43, HARDEN
-	db 49, SLASH
-	db 54, SWORDS_DANCE
+	db 23, HARDEN
+	db 27, SEISMIC_TOSS
+	db 31, FOCUS_ENERGY
+	db 36, X_SCISSOR
+	db 40, SLASH
+	db 48, SWORDS_DANCE
+	db 54, MEGAHORN
+	db 58. GUILLOTINE
 	db 0
 
 TangelaEvosMoves:
@@ -724,6 +727,7 @@ ParasectEvosMoves:
 	db 13, STUN_SPORE
 	db 20, LEECH_LIFE
 	db 30, SPORE
+	db 33, X_SCISSOR
 	db 39, SLASH
 	db 48, GROWTH
 	db 0
@@ -1405,6 +1409,7 @@ BeedrillEvosMoves:
 	db 25, RAGE
 	db 30, PIN_MISSILE
 	db 35, AGILITY
+	db 42, MEGAHORN
 	db 0
 
 MissingNo73EvosMoves:
@@ -1828,8 +1833,9 @@ SeakingEvosMoves:
 	db 24, HORN_ATTACK
 	db 30, FURY_ATTACK
 	db 39, WATERFALL
-	db 48, HORN_DRILL
+	db 48, MEGAHORN
 	db 54, AGILITY
+	db 61, HORN_DRILL
 	db 0
 
 MissingNo9FEvosMoves:
