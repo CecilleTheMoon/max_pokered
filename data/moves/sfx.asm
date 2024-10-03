@@ -175,6 +175,7 @@ MoveSoundTable:
 	db SFX_BATTLE_2A,          $20, $20 ; SLUDGE_BOMB
 	db SFX_BATTLE_2A,          $20, $20 ; GUNK_SHOT
 	db SFX_BATTLE_2A,          $20, $20 ; CROSS_POISON
+	db SFX_BATTLE_25,          $00, $10 ; EXTREMESPEED
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
