@@ -181,7 +181,10 @@
 	const GUNK_SHOT    ; ad
 	const CROSS_POISON ; ae
 	const EXTREMESPEED ; af
-	const STRUGGLE     ; b0
+	const ROCK_TOMB    ; b0
+	const ROCK_BLAST   ; b1
+	const HEAD_SMASH   ; b2
+	const STRUGGLE     ; b3
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
