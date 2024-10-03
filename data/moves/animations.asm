@@ -175,6 +175,9 @@ AttackAnimationPointers:
 	dw GunkShotAnim
 	dw CrossPoisonAnim
 	dw ExtremeSpeedAnim
+	dw RockTombAnim
+	dw RockBlastAnim
+	dw HeadSmashAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -459,6 +462,16 @@ TakeDownAnim:
 
 ThrashAnim:
 	battle_anim THRASH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	db -1 ; end
+
+HeadSmashAnim:
+	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLES_CENTERING, 0, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim DOUBLE_EDGE, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
 	db -1 ; end
 
 DoubleEdgeAnim:
@@ -755,6 +768,12 @@ ThunderAnim:
 	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
 	battle_anim THUNDERBOLT, SUBANIM_1_LIGHTNING_BALL, 1, 2
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
+RockTombAnim:
+	battle_anim ROCK_THROW, SUBANIM_0_ROCKS_FALL_ENEMY, 0, 3
+	battle_anim ROCK_THROW, SUBANIM_0_ROCKS_FALL_ENEMY, 0, 3
+	battle_anim ROCK_THROW, SUBANIM_0_ROCKS_FALL_ENEMY, 0, 3
 	db -1 ; end
 
 RockThrowAnim:
@@ -1195,6 +1214,12 @@ BonemerangAnim:
 RestAnim:
 	battle_anim REST, SUBANIM_0_STATUS_SLEEP, 0, 16
 	battle_anim REST, SUBANIM_0_STATUS_SLEEP, 0, 16
+	db -1 ; end
+
+RockBlastAnim:
+	battle_anim ROCK_SLIDE, SUBANIM_0_ROCKS_LIFT, 0, 3
+	battle_anim ROCK_THROW, SUBANIM_0_ROCKS_TOSS, 0, 3
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 4
 	db -1 ; end
 
 RockSlideAnim:
