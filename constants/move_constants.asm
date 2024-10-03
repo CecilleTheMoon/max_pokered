@@ -175,7 +175,9 @@
 	const OUTRAGE      ; a7
 	const SHADOW_BALL  ; a8
 	const SHADOW_PUNCH ; a9
-	const STRUGGLE     ; aa
+	const MEGAHORN     ; aa
+	const X_SCISSOR    ; ab
+	const STRUGGLE     ; ac
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
