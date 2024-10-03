@@ -211,7 +211,7 @@ RhydonEvosMoves:
 	db 40, FURY_ATTACK
 	db 48, HORN_DRILL
 	db 55, LEER
-	db 64, TAKE_DOWN
+	db 64, HEAD_SMASH
 	db 0
 
 KangaskhanEvosMoves:
@@ -412,7 +412,7 @@ RhyhornEvosMoves:
 	db 40, FURY_ATTACK
 	db 45, HORN_DRILL
 	db 50, LEER
-	db 55, TAKE_DOWN
+	db 55, HEAD_SMASH
 	db 0
 
 LaprasEvosMoves:
@@ -585,11 +585,13 @@ OnixEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 15, BIND
+	db 15, RAGE
 	db 19, ROCK_THROW
-	db 25, RAGE
+	db 25, ROCK_TOMB
 	db 33, SLAM
+	db 38, BIND
 	db 43, HARDEN
+	db 48, HEAD_SMASH
 	db 0
 
 FearowEvosMoves:
@@ -651,8 +653,10 @@ GravelerEvosMoves:
 	db 16, ROCK_THROW
 	db 21, SELFDESTRUCT
 	db 29, HARDEN
+	db 33, ROCK_BLAST
 	db 36, EARTHQUAKE
 	db 43, EXPLOSION
+	db 48, HEAD_SMASH
 	db 0
 
 ChanseyEvosMoves:
@@ -769,8 +773,10 @@ GolemEvosMoves:
 	db 16, ROCK_THROW
 	db 21, SELFDESTRUCT
 	db 29, HARDEN
+	db 33, ROCK_BLAST
 	db 36, EARTHQUAKE
 	db 43, EXPLOSION
+	db 48, HEAD_SMASH
 	db 0
 
 MissingNo32EvosMoves:
@@ -1157,6 +1163,7 @@ KabutoEvosMoves:
 	db 39, SLASH
 	db 44, LEER
 	db 49, HYDRO_PUMP
+	db 53, HEAD_SMASH
 	db 0
 
 KabutopsEvosMoves:
@@ -1167,6 +1174,7 @@ KabutopsEvosMoves:
 	db 39, SLASH
 	db 46, LEER
 	db 53, HYDRO_PUMP
+	db 58, HEAD_SMASH
 	db 0
 
 HorseaEvosMoves:
@@ -1234,6 +1242,7 @@ OmanyteEvosMoves:
 ; Learnset
 	db 34, HORN_ATTACK
 	db 39, LEER
+	db 41, ROCK_BLAST
 	db 46, SPIKE_CANNON
 	db 53, HYDRO_PUMP
 	db 0
@@ -1244,6 +1253,7 @@ OmastarEvosMoves:
 ; Learnset
 	db 34, HORN_ATTACK
 	db 39, LEER
+	db 40, ROCK_BLAST
 	db 44, SPIKE_CANNON
 	db 49, HYDRO_PUMP
 	db 0
@@ -1961,8 +1971,10 @@ GeodudeEvosMoves:
 	db 16, ROCK_THROW
 	db 21, SELFDESTRUCT
 	db 26, HARDEN
+	db 29, ROCK_BLAST
 	db 31, EARTHQUAKE
 	db 36, EXPLOSION
+	db 43, HEAD_SMASH
 	db 0
 
 PorygonEvosMoves:
@@ -1982,6 +1994,7 @@ AerodactylEvosMoves:
 	db 33, SUPERSONIC
 	db 38, BITE
 	db 45, TAKE_DOWN
+	db 50, HEAD_SMASH
 	db 54, HYPER_BEAM
 	db 0
 
