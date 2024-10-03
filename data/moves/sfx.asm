@@ -182,7 +182,10 @@ MoveSoundTable:
 	db SFX_BATTLE_1B,          $01, $a0 ; MUD_SLAP
 	db SFX_BATTLE_1B,          $01, $a0 ; SAND_TOMB
 	db SFX_BATTLE_18,          $00, $80 ; BULLDOZE
-	db SFX_BATTLE_1E,          $00, $60 ; HORN_ATTACK
+	db SFX_BATTLE_1E,          $00, $60 ; DRILL_RUN
+	db SFX_BATTLE_28,          $40, $80 ; ICY_WIND
+	db SFX_BATTLE_0D,          $20, $80 ; ICICLE_SPEAR
+	db SFX_BATTLE_29,          $f0, $e0 ; SHEER_COLD
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
