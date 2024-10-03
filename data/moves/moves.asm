@@ -186,5 +186,8 @@ Moves:
 	move GUNK_SHOT,    POISON_SIDE_EFFECT2,        120, POISON,        85,  5
 	move CROSS_POISON, POISON_SIDE_EFFECT1,         70, POISON,       100, 10
 	move EXTREMESPEED, NO_ADDITIONAL_EFFECT,        80, NORMAL,       100,  5
+	move ROCK_TOMB,    SPEED_DOWN1_EFFECT,          60, ROCK,          95, 20
+	move ROCK_BLAST,   TWO_TO_FIVE_ATTACKS_EFFECT,  25, ROCK,          90, 20
+	move HEAD_SMASH,   RECOIL_EFFECT,              150, ROCK,          80,  5
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
