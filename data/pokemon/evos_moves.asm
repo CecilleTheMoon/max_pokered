@@ -206,9 +206,10 @@ RhydonEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 25, MUD_SLAP
 	db 30, STOMP
 	db 35, TAIL_WHIP
-	db 40, FURY_ATTACK
+	db 40, BULLDOZE
 	db 48, HORN_DRILL
 	db 55, LEER
 	db 64, HEAD_SMASH
@@ -395,6 +396,7 @@ CuboneEvosMoves:
 	db EVOLVE_LEVEL, 28, MAROWAK
 	db 0
 ; Learnset
+	db 19, MUD_SLAP
 	db 25, LEER
 	db 31, FOCUS_ENERGY
 	db 38, THRASH
@@ -407,9 +409,10 @@ RhyhornEvosMoves:
 	db EVOLVE_LEVEL, 42, RHYDON
 	db 0
 ; Learnset
+	db 25, MUD_SLAP
 	db 30, STOMP
 	db 35, TAIL_WHIP
-	db 40, FURY_ATTACK
+	db 40, BULLDOZE
 	db 45, HORN_DRILL
 	db 50, LEER
 	db 55, HEAD_SMASH
@@ -585,6 +588,7 @@ OnixEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 12, MUD_SLAP
 	db 15, RAGE
 	db 19, ROCK_THROW
 	db 25, ROCK_TOMB
@@ -875,10 +879,12 @@ DiglettEvosMoves:
 	db EVOLVE_LEVEL, 26, DUGTRIO
 	db 0
 ; Learnset
+	db 12, MUD_SLAP
 	db 15, GROWL
 	db 19, DIG
 	db 24, SAND_ATTACK
 	db 31, SLASH
+	db 36, SAND_TOMB
 	db 40, EARTHQUAKE
 	db 0
 
@@ -1222,6 +1228,7 @@ SandshrewEvosMoves:
 	db 24, POISON_STING
 	db 31, SWIFT
 	db 38, FURY_SWIPES
+	db 42, DRILL_RUN
 	db 0
 
 SandslashEvosMoves:
@@ -1233,6 +1240,7 @@ SandslashEvosMoves:
 	db 27, POISON_STING
 	db 36, SWIFT
 	db 47, FURY_SWIPES
+	db 51, DRILL_RUN
 	db 0
 
 OmanyteEvosMoves:
@@ -1465,10 +1473,12 @@ DugtrioEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 12, MUD_SLAP
 	db 15, GROWL
 	db 19, DIG
 	db 24, SAND_ATTACK
 	db 35, SLASH
+	db 43, SAND_TOMB
 	db 47, EARTHQUAKE
 	db 0
 
@@ -1717,6 +1727,7 @@ MarowakEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 19, MUD_SLAP
 	db 25, LEER
 	db 33, FOCUS_ENERGY
 	db 41, THRASH
