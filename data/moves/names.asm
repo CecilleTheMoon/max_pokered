@@ -175,5 +175,8 @@ MoveNames::
 	li "GUNK SHOT"
 	li "CROSS POISON"
 	li "EXTREMESPEED"
+	li "ROCK TOMB"
+	li "ROCK BLAST"
+	li "HEAD SMASH"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
