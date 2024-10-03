@@ -186,6 +186,10 @@ MoveSoundTable:
 	db SFX_BATTLE_28,          $40, $80 ; ICY_WIND
 	db SFX_BATTLE_0D,          $20, $80 ; ICICLE_SPEAR
 	db SFX_BATTLE_29,          $f0, $e0 ; SHEER_COLD
+	db SFX_BATTLE_12,          $00, $c0 ; HURRICANE
+	db SFX_BATTLE_25,          $00, $10 ; AERIAL_ACE
+	db SFX_NOT_VERY_EFFECTIVE, $00, $a0 ; AIR_CUTTER
+	db SFX_NOT_VERY_EFFECTIVE, $00, $a0 ; AIR_SLASH
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
