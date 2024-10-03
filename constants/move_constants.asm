@@ -180,7 +180,8 @@
 	const SLUDGE_BOMB  ; ac
 	const GUNK_SHOT    ; ad
 	const CROSS_POISON ; ae
-	const STRUGGLE     ; af
+	const EXTREMESPEED ; af
+	const STRUGGLE     ; b0
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
