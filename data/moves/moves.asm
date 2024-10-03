@@ -189,5 +189,9 @@ Moves:
 	move ROCK_TOMB,    SPEED_DOWN1_EFFECT,          60, ROCK,          95, 20
 	move ROCK_BLAST,   TWO_TO_FIVE_ATTACKS_EFFECT,  25, ROCK,          90, 20
 	move HEAD_SMASH,   RECOIL_EFFECT,              150, ROCK,          80,  5
+	move MUD_SLAP,     ACCURACY_DOWN1_EFFECT,       40, GROUND,       100, 25
+	move SAND_TOMB,    TRAPPING_EFFECT,             35, GROUND,        70, 15
+	move BULLDOZE,     SPEED_DOWN1_EFFECT,          60, GROUND,       100, 20
+	move DRILL_RUN,    NO_ADDITIONAL_EFFECT,        70, GROUND,        95, 15
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
