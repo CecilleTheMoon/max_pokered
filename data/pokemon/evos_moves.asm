@@ -424,10 +424,12 @@ LaprasEvosMoves:
 ; Learnset
 	db 16, SING
 	db 20, MIST
+	db 24, ICY_WIND
 	db 25, BODY_SLAM
 	db 31, CONFUSE_RAY
 	db 38, ICE_BEAM
 	db 46, HYDRO_PUMP
+	db 56, SHEER_COLD
 	db 0
 
 ArcanineEvosMoves:
@@ -867,6 +869,7 @@ SeelEvosMoves:
 	db EVOLVE_LEVEL, 34, DEWGONG
 	db 0
 ; Learnset
+	db 20, ICY_WIND
 	db 30, GROWL
 	db 35, AURORA_BEAM
 	db 40, REST
@@ -1027,6 +1030,7 @@ ArticunoEvosMoves:
 	db 51, BLIZZARD
 	db 55, AGILITY
 	db 60, MIST
+	db 70, SHEER_COLD
 	db 0
 
 ZapdosEvosMoves:
@@ -1498,6 +1502,7 @@ DewgongEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 20, ICY_WIND
 	db 30, GROWL
 	db 35, AURORA_BEAM
 	db 44, REST
@@ -1673,6 +1678,7 @@ CloysterEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+ 	db 25, ICICLE_SPEAR
 	db 50, SPIKE_CANNON
 	db 0
 
