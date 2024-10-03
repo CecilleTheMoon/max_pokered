@@ -185,5 +185,9 @@ MoveNames::
 	li "ICY WIND"
 	li "ICICLE SPEAR"
 	li "SHEER COLD"
+	li "HURRICANE"
+	li "AERIAL ACE"
+	li "AIR CUTTER"
+	li "AIR SLASH"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
