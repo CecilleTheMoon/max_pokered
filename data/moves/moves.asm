@@ -182,5 +182,8 @@ Moves:
 	move SHADOW_PUNCH, SWIFT_EFFECT,                60, GHOST,        100, 20
 	move MEGAHORN,     NO_ADDITIONAL_EFFECT,       120, BUG,           85, 10
 	move X_SCISSOR,    NO_ADDITIONAL_EFFECT,        80, BUG,          100, 20
+	move SLUDGE_BOMB,  POISON_SIDE_EFFECT2,         95, POISON,       100, 10
+	move GUNK_SHOT,    POISON_SIDE_EFFECT2,        120, POISON,        85,  5
+	move CROSS_POISON, POISON_SIDE_EFFECT1,         70, POISON,       100, 10
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
