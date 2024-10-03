@@ -96,10 +96,10 @@ TestBattle: ; unreferenced except in _DEBUG
 	dec a
 	ld [hl], a
 
-	; Give the player a level 20 Rhydon.
-	ld a, RHYDON
+	; Give the player a Pokemon.
+	ld a, RHYDON ; Set the Pokemon species here
 	ld [wCurPartySpecies], a
-	ld a, 20
+	ld a, 100 ; Set the Pokemon level here
 	ld [wCurEnemyLevel], a
 	xor a
 	ld [wMonDataLocation], a
@@ -109,13 +109,19 @@ TestBattle: ; unreferenced except in _DEBUG
 	; This function gives you a way to waste a turn, never know when you'll need it.
 	; Alternatively, add a move to test.
 	ld hl, wPartyMon1Moves
-	ld a, SPLASH
+	ld a, MUD_SLAP     ; Set move 1
+	ld [hli], a
+	ld a, SAND_TOMB    ; Set move 2
+	ld [hli], a
+	ld a, BULLDOZE     ; Set move 3
+	ld [hli], a
+	ld a, DRILL_RUN    ; Set move 4
 	ld [hli], a
 
-	; Fight against a level 20 Rhydon.
-	ld a, RHYDON
+	; Fight against an enemy Pokemon.
+	ld a, RHYDON ; Set the Pokemon species here
 	ld [wCurOpponent], a
-	ld a, 20 ; Set the level you want here.
+	ld a, 100 ; Set the level you want here
 	ld [wCurEnemyLevel], a
 
 	predef InitOpponent
