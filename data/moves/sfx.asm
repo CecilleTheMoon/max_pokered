@@ -193,6 +193,8 @@ MoveSoundTable:
 	db SFX_BATTLE_0B,          $01, $80 ; MACH_PUNCH
 	db SFX_BATTLE_0D,          $00, $40 ; POWERUPPUNCH
 	db SFX_FAINT_FALL,         $ff, $04 ; DYNAMICPUNCH
+	db SFX_BATTLE_09,          $20, $c0 ; CALM_MIND
+	db SFX_BATTLE_18,          $00, $80 ; ZEN_HEADBUTT
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
