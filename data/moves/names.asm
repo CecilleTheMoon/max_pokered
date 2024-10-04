@@ -189,5 +189,8 @@ MoveNames::
 	li "AERIAL ACE"
 	li "AIR CUTTER"
 	li "AIR SLASH"
+	li "MACH PUNCH"
+	li "POWERUPPUNCH"
+	li "DYNAMICPUNCH"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
