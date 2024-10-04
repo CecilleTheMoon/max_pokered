@@ -1129,7 +1129,16 @@ ConfusionSideEffect:
 ConfusionEffect:
 	call CheckTargetSubstitute
 	jr nz, ConfusionEffectFailed
+	ldh a, [hWhoseTurn]
+	and a
+	ld a, [wPlayerMovePower]
+	jr z, .gotUsersPower
+	ld a, [wEnemyMovePower]
+.gotUsersPower
+	and a
+	jr nz, .skipMoveHitTest
 	call MoveHitTest
+.skipMoveHitTest
 	ld a, [wMoveMissed]
 	and a
 	jr nz, ConfusionEffectFailed
@@ -1156,7 +1165,16 @@ ConfusionSideEffectSuccess:
 	ld [bc], a ; confusion status will last 2-5 turns
 	pop af
 	cp CONFUSION_SIDE_EFFECT
+	ldh a, [hWhoseTurn]
+	and a
+	ld a, [wPlayerMovePower]
+	jr z, .gotUsersPower
+	ld a, [wEnemyMovePower]
+.gotUsersPower
+	and a
+	jr nz, .skipAnimation
 	call nz, PlayCurrentMoveAnimation2
+.skipAnimation
 	ld hl, BecameConfusedText
 	jp PrintText
 
