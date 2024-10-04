@@ -296,6 +296,7 @@ SlowbroEvosMoves:
 	db 27, GROWL
 	db 33, WATER_GUN
 	db 37, WITHDRAW
+	db 41, ZEN_HEADBUTT
 	db 44, AMNESIA
 	db 55, PSYCHIC_M
 	db 0
@@ -638,6 +639,7 @@ SlowpokeEvosMoves:
 	db 22, HEADBUTT
 	db 27, GROWL
 	db 33, WATER_GUN
+	db 37, ZEN_HEADBUTT
 	db 40, AMNESIA
 	db 48, PSYCHIC_M
 	db 0
@@ -701,7 +703,7 @@ MrMimeEvosMoves:
 	db 15, CONFUSION
 	db 23, LIGHT_SCREEN
 	db 31, DOUBLESLAP
-	db 39, MEDITATE
+	db 39, CALM_MIND
 	db 47, SUBSTITUTE
 	db 0
 
@@ -774,8 +776,8 @@ DrowzeeEvosMoves:
 	db 17, CONFUSION
 	db 24, HEADBUTT
 	db 29, POISON_GAS
-	db 32, PSYCHIC_M
-	db 37, MEDITATE
+	db 30, ZEN_HEADBUTT
+	db 37, CALM_MIND
 	db 0
 
 GolemEvosMoves:
@@ -1602,9 +1604,9 @@ HypnoEvosMoves:
 	db 12, DISABLE
 	db 17, CONFUSION
 	db 24, HEADBUTT
-	db 33, POISON_GAS
+	db 33, ZEN_HEADBUTT
 	db 37, PSYCHIC_M
-	db 43, MEDITATE
+	db 43, CALM_MIND
 	db 0
 
 GolbatEvosMoves:
