@@ -208,5 +208,9 @@ Moves:
 	move SPARK,        PARALYZE_SIDE_EFFECT2,       65, ELECTRIC,     100, 20
 	move SHOCK_WAVE,   SWIFT_EFFECT,                60, ELECTRIC,     100, 20
 	move ZAP_CANNON,   PARALYZE_EFFECT,            120, ELECTRIC,      50,  5
+	move GIGA_DRAIN,   DRAIN_HP_EFFECT,             80, GRASS,        100, 10
+	move BULLET_SEED,  TWO_TO_FIVE_ATTACKS_EFFECT,  25, GRASS,        100, 20
+	move POWER_WHIP,   NO_ADDITIONAL_EFFECT,       120, GRASS,         85, 10
+	move TRAILBLAZE,   SPEED_UP1_EFFECT,            50, GRASS,        100, 25
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
