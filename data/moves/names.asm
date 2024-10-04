@@ -197,5 +197,9 @@ MoveNames::
 	li "SPARK"
 	li "SHOCK WAVE"
 	li "ZAP CANNON"
+	li "GIGA DRAIN"
+	li "BULLET SEED"
+	li "POWER WHIP"
+	li "TRAILBLAZE"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
