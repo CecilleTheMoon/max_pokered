@@ -198,6 +198,10 @@ MoveSoundTable:
 	db SFX_BATTLE_2F,          $00, $20 ; SPARK
 	db SFX_BATTLE_26,          $00, $80 ; SHOCK_WAVE
 	db SFX_BATTLE_36,          $00, $80 ; ZAP_CANNON
+	db SFX_BATTLE_24,          $40, $c0 ; GIGA_DRAIN
+	db SFX_BATTLE_1B,          $03, $60 ; LEECH_SEED
+	db SFX_VINE_WHIP,          $01, $80 ; POWER_WHIP
+	db SFX_BATTLE_18,          $00, $80 ; BULLDOZE
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
