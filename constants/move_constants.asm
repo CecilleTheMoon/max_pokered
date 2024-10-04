@@ -195,7 +195,10 @@
 	const AERIAL_ACE   ; bb
 	const AIR_CUTTER   ; bc
 	const AIR_SLASH    ; bd
-	const STRUGGLE     ; be
+	const MACH_PUNCH   ; be
+	const POWERUPPUNCH ; bf
+	const DYNAMICPUNCH ; c0
+	const STRUGGLE     ; c1
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
