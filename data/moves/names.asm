@@ -201,5 +201,8 @@ MoveNames::
 	li "BULLET SEED"
 	li "POWER WHIP"
 	li "TRAILBLAZE"
+	li "WATER PULSE"
+	li "AQUA JET"
+	li "CHILLINWATER"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
