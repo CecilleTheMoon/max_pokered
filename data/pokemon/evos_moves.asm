@@ -322,6 +322,7 @@ ExeggutorEvosMoves:
 	db 0
 ; Learnset
 	db 28, STOMP
+	db 35, GIGA_DRAIN
 	db 0
 
 LickitungEvosMoves:
@@ -343,6 +344,7 @@ ExeggcuteEvosMoves:
 	db 7, ABSORB
 	db 25, REFLECT
 	db 28, LEECH_SEED
+	db 30, BULLET_SEED
 	db 32, STUN_SPORE
 	db 37, POISONPOWDER
 	db 42, SOLARBEAM
@@ -561,10 +563,12 @@ TangelaEvosMoves:
 ; Learnset
 	db 29, ABSORB
 	db 32, POISONPOWDER
+	db 34, TRAILBLAZE
 	db 36, STUN_SPORE
 	db 39, SLEEP_POWDER
 	db 45, SLAM
 	db 49, GROWTH
+	db 53, POWER_WHIP
 	db 0
 
 MissingNo1FEvosMoves:
@@ -2176,6 +2180,7 @@ OddishEvosMoves:
 	db 15, POISONPOWDER
 	db 17, STUN_SPORE
 	db 19, SLEEP_POWDER
+	db 20, TRAILBLAZE
 	db 24, ACID
 	db 33, PETAL_DANCE
 	db 46, SOLARBEAM
@@ -2189,6 +2194,7 @@ GloomEvosMoves:
 	db 15, POISONPOWDER
 	db 17, STUN_SPORE
 	db 19, SLEEP_POWDER
+	db 20, TRAILBLAZE
 	db 28, ACID
 	db 38, PETAL_DANCE
 	db 52, SOLARBEAM
@@ -2201,6 +2207,7 @@ VileplumeEvosMoves:
 	db 15, POISONPOWDER
 	db 17, STUN_SPORE
 	db 19, SLEEP_POWDER
+	db 20, TRAILBLAZE
 	db 0
 
 BellsproutEvosMoves:
@@ -2215,6 +2222,7 @@ BellsproutEvosMoves:
 	db 26, ACID
 	db 33, RAZOR_LEAF
 	db 42, SLAM
+	db 45, POWER_WHIP
 	db 0
 
 WeepinbellEvosMoves:
@@ -2229,6 +2237,7 @@ WeepinbellEvosMoves:
 	db 29, ACID
 	db 38, RAZOR_LEAF
 	db 49, SLAM
+	db 53, POWER_WHIP
 	db 0
 
 VictreebelEvosMoves:
