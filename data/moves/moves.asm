@@ -212,5 +212,8 @@ Moves:
 	move BULLET_SEED,  TWO_TO_FIVE_ATTACKS_EFFECT,  25, GRASS,        100, 20
 	move POWER_WHIP,   NO_ADDITIONAL_EFFECT,       120, GRASS,         85, 10
 	move TRAILBLAZE,   SPEED_UP1_EFFECT,            50, GRASS,        100, 25
+	move WATER_PULSE,  CONFUSION_SIDE_EFFECT,       60, WATER,        100, 25
+	move AQUA_JET,     NO_ADDITIONAL_EFFECT,        40, WATER,        100, 30
+	move CHILLINWATER, ATTACK_DOWN1_EFFECT,         50, WATER,        100, 25
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
