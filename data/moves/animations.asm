@@ -192,6 +192,8 @@ AttackAnimationPointers:
 	dw MachPunchAnim
 	dw PowerUpPunchAnim
 	dw DynamicPunchAnim
+	dw CalmMindAnim
+	dw ZenHeadbuttAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -491,6 +493,11 @@ BulldozeAnim:
 	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
 	battle_anim HEADBUTT, SUBANIM_1_STAR_BIG, 1, 6
 	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	db -1 ; end
+
+ZenHeadbuttAnim:
+	battle_anim PSYCHIC_M, SE_FLASH_SCREEN_LONG
+	battle_anim HEADBUTT, SUBANIM_1_STAR_BIG, 1, 6
 	db -1 ; end
 
 HeadbuttAnim:
@@ -924,6 +931,16 @@ PsychicAnim:
 
 HypnosisAnim:
 	battle_anim HYPNOSIS, SE_FLASH_SCREEN_LONG
+	db -1 ; end
+
+CalmMindAnim:
+	battle_anim PSYCHIC_M, SE_WAVY_SCREEN
+	battle_anim MEDITATE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLE_1_SQUARE_CLOSING, 1, 6
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
 	db -1 ; end
 
 MeditateAnim:
