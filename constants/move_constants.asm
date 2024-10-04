@@ -200,7 +200,10 @@
 	const DYNAMICPUNCH ; c0
 	const CALM_MIND    ; c1
 	const ZEN_HEADBUTT ; c2
-	const STRUGGLE     ; c1
+	const SPARK        ; c3
+	const SHOCK_WAVE   ; c4
+	const ZAP_CANNON   ; c5
+	const STRUGGLE     ; c6
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
