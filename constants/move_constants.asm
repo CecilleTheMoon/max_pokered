@@ -207,7 +207,10 @@
 	const BULLET_SEED  ; c7
 	const POWER_WHIP   ; c8
 	const TRAILBLAZE   ; c9
-	const STRUGGLE     ; ca
+	const WATER_PULSE  ; ca
+	const AQUA_JET     ; cb
+	const CHILLINWATER ; cc
+	const STRUGGLE     ; cd
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
