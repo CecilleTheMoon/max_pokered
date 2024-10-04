@@ -194,5 +194,8 @@ MoveNames::
 	li "DYNAMICPUNCH"
 	li "CALM MIND"
 	li "ZEN HEADBUTT"
+	li "SPARK"
+	li "SHOCK WAVE"
+	li "ZAP CANNON"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
