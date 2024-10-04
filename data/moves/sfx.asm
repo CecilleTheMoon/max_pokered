@@ -190,6 +190,9 @@ MoveSoundTable:
 	db SFX_BATTLE_25,          $00, $10 ; AERIAL_ACE
 	db SFX_NOT_VERY_EFFECTIVE, $00, $a0 ; AIR_CUTTER
 	db SFX_NOT_VERY_EFFECTIVE, $00, $a0 ; AIR_SLASH
+	db SFX_BATTLE_0B,          $01, $80 ; MACH_PUNCH
+	db SFX_BATTLE_0D,          $00, $40 ; POWERUPPUNCH
+	db SFX_FAINT_FALL,         $ff, $04 ; DYNAMICPUNCH
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
