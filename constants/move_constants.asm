@@ -198,6 +198,8 @@
 	const MACH_PUNCH   ; be
 	const POWERUPPUNCH ; bf
 	const DYNAMICPUNCH ; c0
+	const CALM_MIND    ; c1
+	const ZEN_HEADBUTT ; c2
 	const STRUGGLE     ; c1
 DEF NUM_ATTACKS EQU const_value - 1
 
