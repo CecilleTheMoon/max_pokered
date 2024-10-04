@@ -272,10 +272,12 @@ VoltorbEvosMoves:
 	db 0
 ; Learnset
 	db 17, SONICBOOM
+	db 20, SPARK
 	db 22, SELFDESTRUCT
 	db 29, LIGHT_SCREEN
 	db 36, SWIFT
 	db 43, EXPLOSION
+	db 50, ZAP_CANNON
 	db 0
 
 NidokingEvosMoves:
@@ -837,8 +839,10 @@ MagnetonEvosMoves:
 	db 25, THUNDERSHOCK
 	db 29, SUPERSONIC
 	db 38, THUNDER_WAVE
+	db 40, SPARK
 	db 46, SWIFT
 	db 54, SCREECH
+	db 57, ZAP_CANNON
 	db 0
 
 KoffingEvosMoves:
@@ -1341,6 +1345,7 @@ JolteonEvosMoves:
 	db 37, TAIL_WHIP
 	db 40, THUNDER_WAVE
 	db 42, DOUBLE_KICK
+	db 43, SHOCK_WAVE
 	db 44, AGILITY
 	db 48, PIN_MISSILE
 	db 54, THUNDER
@@ -1714,10 +1719,12 @@ ElectrodeEvosMoves:
 	db 0
 ; Learnset
 	db 17, SONICBOOM
+	db 20, SPARK
 	db 22, SELFDESTRUCT
 	db 29, LIGHT_SCREEN
 	db 40, SWIFT
 	db 50, EXPLOSION
+	db 55, ZAP_CANNON
 	db 0
 
 ClefableEvosMoves:
@@ -2054,9 +2061,11 @@ MagnemiteEvosMoves:
 	db 21, SONICBOOM
 	db 25, THUNDERSHOCK
 	db 29, SUPERSONIC
+	db 33, SPARK
 	db 35, THUNDER_WAVE
 	db 41, SWIFT
 	db 47, SCREECH
+	db 51, ZAP_CANNON
 	db 0
 
 MissingNoAEEvosMoves:
