@@ -203,7 +203,11 @@
 	const SPARK        ; c3
 	const SHOCK_WAVE   ; c4
 	const ZAP_CANNON   ; c5
-	const STRUGGLE     ; c6
+	const GIGA_DRAIN   ; c6
+	const BULLET_SEED  ; c7
+	const POWER_WHIP   ; c8
+	const TRAILBLAZE   ; c9
+	const STRUGGLE     ; ca
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
