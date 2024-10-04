@@ -201,6 +201,9 @@ AttackAnimationPointers:
 	dw BulletSeedAnim
 	dw PowerWhipAnim
 	dw TrailblazeAnim
+	dw WaterPulseAnim
+	dw AquaJetAnim
+	dw ChillinWaterAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -709,10 +712,22 @@ FlamethrowerAnim:
 	battle_anim FLAMETHROWER, SUBANIM_1_FLAME_COLUMN_2, 1, 6
 	db -1 ; end
 
+ChillinWaterAnim:
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim SURF, SE_WATER_DROPLETS_EVERYWHERE
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim ICE_BEAM, SUBANIM_0_ICE_RISE, 0, 16
+	db -1 ; end
+
 MistAnim:
 	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
 	battle_anim SURF, SE_WATER_DROPLETS_EVERYWHERE
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
+WaterPulseAnim:
+	battle_anim PSYCHIC_M, SE_FLASH_SCREEN_LONG
+	battle_anim WATER_GUN, SUBANIM_0_WATER_DROPLETS, 0, 8
 	db -1 ; end
 
 WaterGunAnim:
@@ -722,6 +737,13 @@ WaterGunAnim:
 HydroPumpAnim:
 	battle_anim HYDRO_PUMP, SUBANIM_0_WATER_COLUMNS, 0, 6
 	battle_anim HYDRO_PUMP, SUBANIM_0_WATER_COLUMNS, 0, 6
+	db -1 ; end
+
+AquaJetAnim:
+	battle_anim SURF, SE_WATER_DROPLETS_EVERYWHERE
+	battle_anim QUICK_ATTACK, SE_SLIDE_MON_OFF
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim NO_MOVE, SE_SHOW_MON_PIC
 	db -1 ; end
 
 SurfAnim:
