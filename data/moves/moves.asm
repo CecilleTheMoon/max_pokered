@@ -205,5 +205,8 @@ Moves:
 	move DYNAMICPUNCH, CONFUSION_EFFECT,           120, FIGHTING,      50,  5
 	move CALM_MIND,    SPECIAL_UP1_EFFECT,           0, PSYCHIC_TYPE, 100, 20
 	move ZEN_HEADBUTT, FLINCH_SIDE_EFFECT2,         80, PSYCHIC_TYPE,  90, 15
+	move SPARK,        PARALYZE_SIDE_EFFECT2,       65, ELECTRIC,     100, 20
+	move SHOCK_WAVE,   SWIFT_EFFECT,                60, ELECTRIC,     100, 20
+	move ZAP_CANNON,   PARALYZE_EFFECT,            120, ELECTRIC,      50,  5
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
