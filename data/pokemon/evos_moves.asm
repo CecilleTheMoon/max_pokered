@@ -471,6 +471,7 @@ ShellderEvosMoves:
 	db EVOLVE_ITEM, WATER_STONE, 1, CLOYSTER
 	db 0
 ; Learnset
+	db 15, CHILLINWATER
 	db 18, SUPERSONIC
 	db 23, CLAMP
 	db 30, AURORA_BEAM
@@ -524,6 +525,7 @@ StaryuEvosMoves:
 ; Learnset
 	db 17, WATER_GUN
 	db 22, HARDEN
+	db 25, WATER_PULSE
 	db 27, RECOVER
 	db 32, SWIFT
 	db 37, MINIMIZE
@@ -538,6 +540,7 @@ BlastoiseEvosMoves:
 	db 8, BUBBLE
 	db 15, WATER_GUN
 	db 24, BITE
+	db 27, AQUA_JET
 	db 31, WITHDRAW
 	db 42, SKULL_BASH
 	db 52, HYDRO_PUMP
@@ -887,6 +890,7 @@ SeelEvosMoves:
 	db EVOLVE_LEVEL, 34, DEWGONG
 	db 0
 ; Learnset
+	db 16, CHILLINWATER
 	db 20, ICY_WIND
 	db 30, GROWL
 	db 35, AURORA_BEAM
@@ -1192,6 +1196,7 @@ KabutoEvosMoves:
 	db EVOLVE_LEVEL, 40, KABUTOPS
 	db 0
 ; Learnset
+	db 30, AQUA_JET
 	db 34, ABSORB
 	db 39, SLASH
 	db 44, LEER
@@ -1203,6 +1208,7 @@ KabutopsEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 30, AQUA_JET
 	db 34, ABSORB
 	db 39, SLASH
 	db 46, LEER
@@ -1530,6 +1536,7 @@ DewgongEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 16, CHILLINWATER
 	db 20, ICY_WIND
 	db 30, GROWL
 	db 35, AURORA_BEAM
@@ -1708,6 +1715,7 @@ CloysterEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 15, CHILLINWATER
  	db 25, ICICLE_SPEAR
 	db 50, SPIKE_CANNON
 	db 0
@@ -1843,6 +1851,7 @@ StarmieEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 25, WATER_PULSE
 	db 0
 
 BulbasaurEvosMoves:
@@ -2105,6 +2114,7 @@ SquirtleEvosMoves:
 	db 8, BUBBLE
 	db 15, WATER_GUN
 	db 22, BITE
+	db 24, AQUA_JET
 	db 28, WITHDRAW
 	db 35, SKULL_BASH
 	db 42, HYDRO_PUMP
@@ -2131,6 +2141,7 @@ WartortleEvosMoves:
 	db 8, BUBBLE
 	db 15, WATER_GUN
 	db 24, BITE
+	db 27, AQUA_JET
 	db 31, WITHDRAW
 	db 39, SKULL_BASH
 	db 47, HYDRO_PUMP
