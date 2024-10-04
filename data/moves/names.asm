@@ -192,5 +192,7 @@ MoveNames::
 	li "MACH PUNCH"
 	li "POWERUPPUNCH"
 	li "DYNAMICPUNCH"
+	li "CALM MIND"
+	li "ZEN HEADBUTT"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
