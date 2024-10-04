@@ -221,6 +221,7 @@ KangaskhanEvosMoves:
 ; Learnset
 	db 26, BITE
 	db 31, TAIL_WHIP
+	db 33, POWERUPPUNCH
 	db 36, MEGA_PUNCH
 	db 41, LEER
 	db 46, DIZZY_PUNCH
@@ -719,11 +720,13 @@ HitmonchanEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 27, MACH_PUNCH
 	db 33, FIRE_PUNCH
 	db 38, ICE_PUNCH
 	db 43, THUNDERPUNCH
 	db 48, MEGA_PUNCH
 	db 53, COUNTER
+	db 58, DYNAMICPUNCH
 	db 0
 
 ArbokEvosMoves:
@@ -863,6 +866,7 @@ MankeyEvosMoves:
 ; Learnset
 	db 15, KARATE_CHOP
 	db 21, FURY_SWIPES
+	db 25, POWERUPPUNCH
 	db 27, FOCUS_ENERGY
 	db 33, SEISMIC_TOSS
 	db 39, THRASH
@@ -1425,6 +1429,8 @@ PoliwrathEvosMoves:
 ; Learnset
 	db 16, HYPNOSIS
 	db 19, WATER_GUN
+	db 30, POWERUPPUNCH
+	db 54, DYNAMICPUNCH
 	db 0
 
 WeedleEvosMoves:
@@ -1478,6 +1484,7 @@ PrimeapeEvosMoves:
 ; Learnset
 	db 15, KARATE_CHOP
 	db 21, FURY_SWIPES
+	db 25, POWERUPPUNCH
 	db 27, FOCUS_ENERGY
 	db 37, SEISMIC_TOSS
 	db 46, THRASH
@@ -1568,6 +1575,7 @@ MachampEvosMoves:
 	db 36, FOCUS_ENERGY
 	db 44, SEISMIC_TOSS
 	db 52, SUBMISSION
+	db 58, DYNAMICPUNCH
 	db 0
 
 MissingNo7FEvosMoves:
