@@ -197,6 +197,10 @@ AttackAnimationPointers:
 	dw SparkAnim
 	dw ShockWaveAnim
 	dw ZapCannonAnim
+	dw GigaDrainAnim
+	dw BulletSeedAnim
+	dw PowerWhipAnim
+	dw TrailblazeAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -449,6 +453,14 @@ SlamAnim:
 	battle_anim SLAM, SUBANIM_0_STAR_THRICE, 0, 6
 	db -1 ; end
 
+PowerWhipAnim:
+	battle_anim LEECH_SEED, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLES_CENTERING, 0, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim VINE_WHIP, SUBANIM_0_SLICE, 0, 1
+	battle_anim NO_MOVE, SUBANIM_0_STAR_THRICE, 0, 8
+	db -1 ; end
+
 VineWhipAnim:
 	battle_anim VINE_WHIP, SUBANIM_0_SLICE, 0, 1
 	battle_anim NO_MOVE, SUBANIM_0_STAR_TWICE, 0, 8
@@ -490,6 +502,15 @@ SandTombAnim:
 
 SandAttackAnim:
 	battle_anim SAND_ATTACK, SUBANIM_1_SAND, 1, 6
+	db -1 ; end
+
+TrailblazeAnim:
+	battle_anim LEECH_SEED, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_LEAVES_FALLING
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim HEADBUTT, SUBANIM_1_STAR_BIG, 1, 6
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 
 BulldozeAnim:
@@ -820,6 +841,23 @@ MegaDrainAnim:
 	battle_anim NO_MOVE, SUBANIM_0_CIRCLE_1_SQUARE_TOSS_BACK, 0, 6
 	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
+GigaDrainAnim:
+	battle_anim MEGA_DRAIN, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLES_1_SQUARES_CENTERING_ENEMY, 0, 6
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLE_1_SQUARE_TOSS_BACK, 0, 1
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLE_1_SQUARE_TOSS_BACK, 0, 1
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLE_1_SQUARE_TOSS_BACK, 0, 1
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
+BulletSeedAnim:
+	battle_anim LEECH_SEED, SUBANIM_1_SEED_TOSS, 1, 1
+	battle_anim LEECH_SEED, SUBANIM_1_SEED_TOSS, 1, 1
+	battle_anim LEECH_SEED, SUBANIM_1_SEED_TOSS, 1, 1
 	db -1 ; end
 
 LeechSeedAnim:
