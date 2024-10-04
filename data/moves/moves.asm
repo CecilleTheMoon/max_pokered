@@ -200,5 +200,8 @@ Moves:
 	move AERIAL_ACE,   SWIFT_EFFECT,                60, FLYING,       100, 20
 	move AIR_CUTTER,   NO_ADDITIONAL_EFFECT,        55, FLYING,        95, 25
 	move AIR_SLASH,    FLINCH_SIDE_EFFECT2,         75, FLYING,        95, 15
+	move MACH_PUNCH,   NO_ADDITIONAL_EFFECT,        40, FIGHTING,     100, 30
+	move POWERUPPUNCH, ATTACK_UP1_EFFECT,           40, FIGHTING,     100, 25
+	move DYNAMICPUNCH, CONFUSION_EFFECT,           120, FIGHTING,      50,  5
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
