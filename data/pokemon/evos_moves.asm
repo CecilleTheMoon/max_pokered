@@ -443,6 +443,7 @@ ArcanineEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 25, FLAME_WHEEL
 	db 45, EXTREMESPEED
 
 MewEvosMoves:
@@ -593,6 +594,7 @@ GrowlitheEvosMoves:
 ; Learnset
 	db 18, EMBER
 	db 23, LEER
+	db 25, FLAME_WHEEL
 	db 30, TAKE_DOWN
 	db 39, AGILITY
 	db 50, FLAMETHROWER
@@ -813,6 +815,7 @@ MagmarEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 24, WILL_O_WISP
 	db 36, LEER
 	db 39, CONFUSE_RAY
 	db 43, FIRE_PUNCH
@@ -1123,6 +1126,7 @@ VulpixEvosMoves:
 	db 0
 ; Learnset
 	db 16, QUICK_ATTACK
+	db 20, WILL_O_WISP
 	db 21, ROAR
 	db 28, CONFUSE_RAY
 	db 35, FLAMETHROWER
@@ -1957,6 +1961,7 @@ PonytaEvosMoves:
 	db EVOLVE_LEVEL, 40, RAPIDASH
 	db 0
 ; Learnset
+	db 25, FLAME_CHARGE
 	db 30, TAIL_WHIP
 	db 32, STOMP
 	db 35, GROWL
@@ -1969,6 +1974,7 @@ RapidashEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 25, FLAME_CHARGE
 	db 30, TAIL_WHIP
 	db 32, STOMP
 	db 35, GROWL
