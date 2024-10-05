@@ -1192,6 +1192,9 @@ ConfusionEffectFailed:
 ParalyzeEffect:
 	jpfar ParalyzeEffect_
 
+BurnEffect:
+	jpfar BurnEffect_
+
 SubstituteEffect:
 	jpfar SubstituteEffect_
 
@@ -1451,6 +1454,10 @@ DidntAffectText:
 IsUnaffectedText:
 	text_far _IsUnaffectedText
 	text_end
+
+PrintWasBurnedText:
+	ld hl, BurnedText
+	jp PrintText
 
 PrintMayNotAttackText:
 	ld hl, ParalyzedMayNotAttackText
