@@ -215,5 +215,8 @@ Moves:
 	move WATER_PULSE,  CONFUSION_SIDE_EFFECT,       60, WATER,        100, 25
 	move AQUA_JET,     NO_ADDITIONAL_EFFECT,        40, WATER,        100, 30
 	move CHILLINWATER, ATTACK_DOWN1_EFFECT,         50, WATER,        100, 25
+	move FLAME_WHEEL,  BURN_SIDE_EFFECT1,           60, FIRE,         100, 25
+	move WILL_O_WISP,  BURN_EFFECT,                  0, FIRE,          85, 20
+	move FLAME_CHARGE, SPEED_UP1_EFFECT,            50, FIRE,         100, 25
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
