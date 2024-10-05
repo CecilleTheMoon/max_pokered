@@ -201,10 +201,13 @@ MoveSoundTable:
 	db SFX_BATTLE_24,          $40, $c0 ; GIGA_DRAIN
 	db SFX_BATTLE_1B,          $03, $60 ; LEECH_SEED
 	db SFX_VINE_WHIP,          $01, $80 ; POWER_WHIP
-	db SFX_BATTLE_18,          $00, $80 ; BULLDOZE
+	db SFX_BATTLE_18,          $00, $80 ; TRAILBLAZE
 	db SFX_PSYCHIC_M,          $00, $80 ; WATER_PULSE
 	db SFX_BATTLE_2C,          $00, $80 ; AQUA_JET
 	db SFX_BATTLE_29,          $00, $80 ; CHILLINWATER
+	db SFX_BATTLE_0D,          $10, $60 ; FLAME_WHEEL
+	db SFX_BATTLE_29,          $20, $c0 ; WILL_O_WISP
+	db SFX_BATTLE_13,          $f1, $ff ; FLAME_CHARGE
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
