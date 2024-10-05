@@ -204,5 +204,8 @@ MoveNames::
 	li "WATER PULSE"
 	li "AQUA JET"
 	li "CHILLINWATER"
+	li "FLAME WHEEL"
+	li "WILL-O-WISP"
+	li "FLAME CHARGE"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
