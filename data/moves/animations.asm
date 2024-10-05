@@ -204,6 +204,9 @@ AttackAnimationPointers:
 	dw WaterPulseAnim
 	dw AquaJetAnim
 	dw ChillinWaterAnim
+	dw FlameWheelAnim
+	dw WillOWispAnim
+	dw FlameChargeAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -314,6 +317,16 @@ MegaPunchAnim:
 PayDayAnim:
 	battle_anim POUND, SUBANIM_0_STAR_TWICE, 0, 8
 	battle_anim PAY_DAY, SUBANIM_0_COIN_BOUNCE, 0, 4
+	db -1 ; end
+
+FlameWheelAnim:
+	battle_anim LEECH_SEED, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_SPIRAL_BALLS_INWARD
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim FIRE_PUNCH, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	battle_anim EMBER, SUBANIM_1_FLAMES, 1, 4
 	db -1 ; end
 
 FirePunchAnim:
@@ -505,6 +518,17 @@ SandTombAnim:
 
 SandAttackAnim:
 	battle_anim SAND_ATTACK, SUBANIM_1_SAND, 1, 6
+	db -1 ; end
+
+FlameChargeAnim:
+	battle_anim LEECH_SEED, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim HEADBUTT, SUBANIM_1_STAR_BIG, 1, 6
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	battle_anim EMBER, SUBANIM_1_FLAMES, 1, 4
 	db -1 ; end
 
 TrailblazeAnim:
@@ -1162,6 +1186,13 @@ ShadowPunchAnim:
 	battle_anim CONFUSE_RAY, SE_DARK_SCREEN_PALETTE
 	battle_anim FIRE_PUNCH, SUBANIM_0_STAR_THRICE, 0, 6
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
+WillOWispAnim:
+	battle_anim CONFUSE_RAY, SE_DARK_SCREEN_PALETTE
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_TOSS, 1, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim EMBER, SUBANIM_1_FLAMES, 1, 4
 	db -1 ; end
 
 ConfuseRayAnim:
