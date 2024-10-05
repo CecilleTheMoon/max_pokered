@@ -210,6 +210,9 @@
 	const WATER_PULSE  ; ca
 	const AQUA_JET     ; cb
 	const CHILLINWATER ; cc
+	const FLAME_WHEEL  ; cd
+	const WILL_O_WISP  ; ce
+	const FLAME_CHARGE ; cf
 	const STRUGGLE     ; cd
 DEF NUM_ATTACKS EQU const_value - 1
 
