@@ -208,6 +208,11 @@ MoveSoundTable:
 	db SFX_BATTLE_0D,          $10, $60 ; FLAME_WHEEL
 	db SFX_BATTLE_29,          $20, $c0 ; WILL_O_WISP
 	db SFX_BATTLE_13,          $f1, $ff ; FLAME_CHARGE
+	db SFX_SUPER_EFFECTIVE,    $20, $c0 ; IRON_TAIL
+	db SFX_BATTLE_0B,          $01, $80 ; BULLET_PUNCH
+	db SFX_BATTLE_0E,          $20, $20 ; IRON_DEFENSE
+	db SFX_BATTLE_18,          $00, $80 ; IRON_HEAD
+	db SFX_BATTLE_34,          $00, $40 ; MAGNET_BOMB
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
