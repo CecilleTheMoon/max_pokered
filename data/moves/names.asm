@@ -207,5 +207,10 @@ MoveNames::
 	li "FLAME WHEEL"
 	li "WILL-O-WISP"
 	li "FLAME CHARGE"
+	li "IRON TAIL"
+	li "BULLET PUNCH"
+	li "IRON HEAD"
+	li "IRON DEFENSE"
+	li "MAGNET BOMB"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS
