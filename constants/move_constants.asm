@@ -213,7 +213,12 @@
 	const FLAME_WHEEL  ; cd
 	const WILL_O_WISP  ; ce
 	const FLAME_CHARGE ; cf
-	const STRUGGLE     ; cd
+	const IRON_TAIL    ; d0
+	const BULLET_PUNCH ; d1
+	const IRON_HEAD    ; d2
+	const IRON_DEFENSE ; d3
+	const MAGNET_BOMB  ; d4
+	const STRUGGLE     ; d5
 DEF NUM_ATTACKS EQU const_value - 1
 
 	; Moves do double duty as animation identifiers.
