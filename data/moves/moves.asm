@@ -218,5 +218,10 @@ Moves:
 	move FLAME_WHEEL,  BURN_SIDE_EFFECT1,           60, FIRE,         100, 25
 	move WILL_O_WISP,  BURN_EFFECT,                  0, FIRE,          85, 20
 	move FLAME_CHARGE, SPEED_UP1_EFFECT,            50, FIRE,         100, 25
+	move IRON_TAIL,    DEFENSE_DOWN_SIDE_EFFECT,   120, STEEL,         85,  5
+	move BULLET_PUNCH, NO_ADDITIONAL_EFFECT,        40, STEEL,        100, 30
+	move IRON_HEAD,    FLINCH_SIDE_EFFECT2,         80, STEEL,        100, 15
+	move IRON_DEFENSE, DEFENSE_UP2_EFFECT,           0, STEEL,        100, 20
+	move MAGNET_BOMB,  SWIFT_EFFECT,                60, STEEL,        100, 20
 	move STRUGGLE,     RECOIL_EFFECT,               50, TYPELESS,     100, 10
 	assert_table_length NUM_ATTACKS
