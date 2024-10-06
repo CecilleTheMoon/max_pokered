@@ -207,6 +207,11 @@ AttackAnimationPointers:
 	dw FlameWheelAnim
 	dw WillOWispAnim
 	dw FlameChargeAnim
+	dw IronTailAnim
+	dw BulletPunchAnim
+	dw IronHeadAnim
+	dw IronDefenseAnim
+	dw MagnetBombAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -292,6 +297,16 @@ DoubleSlapAnim:
 MachPunchAnim:
 	battle_anim QUICK_ATTACK, SE_SLIDE_MON_OFF
 	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim COMET_PUNCH, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	db -1 ; end
+
+BulletPunchAnim:
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim MEDITATE, SUBANIM_0_CIRCLE_1_SQUARE_CLOSING, 1, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim QUICK_ATTACK, SE_SLIDE_MON_OFF
 	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
 	battle_anim COMET_PUNCH, SUBANIM_0_STAR_THRICE, 0, 6
 	battle_anim NO_MOVE, SE_RESET_MON_POSITION
@@ -540,6 +555,15 @@ TrailblazeAnim:
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 
+IronHeadAnim:
+	battle_anim LEECH_SEED, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLE_1_SQUARE_CLOSING, 0, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim HEADBUTT, SUBANIM_1_STAR_BIG, 1, 6
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	db -1 ; end
+
 BulldozeAnim:
 	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
 	battle_anim HEADBUTT, SUBANIM_1_STAR_BIG, 1, 6
@@ -644,6 +668,20 @@ DoubleEdgeAnim:
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
 	battle_anim DOUBLE_EDGE, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	db -1 ; end
+
+IronTailAnim:
+	battle_anim LEECH_SEED, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLE_1_SQUARE_CLOSING, 0, 6
+	battle_anim NO_MOVE, SE_SLIDE_MON_DOWN
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim DOUBLE_EDGE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_RESET_MON_POSITION
 	db -1 ; end
 
@@ -1216,6 +1254,13 @@ DefenseCurlAnim:
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 
+IronDefenseAnim:
+	battle_anim DEFENSE_CURL, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLE_1_SQUARE_CLOSING, 0, 6
+	battle_anim BARRIER, SUBANIM_1_BARRIER, 1, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
+
 BarrierAnim:
 	battle_anim BARRIER, SUBANIM_1_BARRIER, 1, 6
 	battle_anim BARRIER, SUBANIM_1_BARRIER, 1, 6
@@ -1265,6 +1310,14 @@ MirrorMoveAnim:
 
 SelfdestructAnim:
 	battle_anim SELFDESTRUCT, SUBANIM_1_SELFDESTRUCT, 1, 3
+	db -1 ; end
+
+MagnetBombAnim:
+	battle_anim LEECH_SEED, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLE_1_SQUARE_CLOSING, 0, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim EGG_BOMB, SUBANIM_1_CIRCLE_BLACK_TOSS, 1, 4
+	battle_anim EGG_BOMB, SUBANIM_1_EXPLOSION_SMALL_ENEMY, 1, 4
 	db -1 ; end
 
 EggBombAnim:
