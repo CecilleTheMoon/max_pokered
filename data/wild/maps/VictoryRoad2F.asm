@@ -1,15 +1,24 @@
 VictoryRoad2FWildMons:
-	def_grass_wildmons 10 ; encounter rate
-	db 22, MACHOP
-	db 24, GEODUDE
-	db 26, ZUBAT
-	db 36, ONIX
-	db 39, ONIX
-	db 42, ONIX
-	db 41, MACHOKE
-	db 40, GOLBAT
-	db 40, MAROWAK
-	db 43, GRAVELER
+	def_grass_wildmons 15 ; encounter rate
+	db 40, GRAVELER   ; 19.9% chance
+	db 41, GOLBAT     ; 19.9% chance
+	db 41, RHYHORN    ;  9.8% chance
+	db 42, ONIX       ;  9.8% chance
+	db 43, MACHOKE    ;  9.8% chance
+	db 43, GOLBAT     ;  9.8% chance
+	db 42, GRAVELER   ;  5.1% chance
+	db 44, MAROWAK    ;  5.1% chance
+	db 43, ONIX       ;  4.3% chance
+IF DEF(_RED)
+	db 44, HITMONCHAN ;  4.3% chance
+	db 44, ONIX       ;  1.2% chance
+	db 44, HITMONLEE  ;  1.2% chance
+ENDC
+IF DEF(_BLUE)
+	db 44, HITMONLEE  ;  4.3% chance
+	db 44, ONIX       ;  1.2% chance
+	db 44, HITMONCHAN ;  1.2% chance
+ENDC
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

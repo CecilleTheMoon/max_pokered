@@ -1,28 +1,29 @@
 Route5WildMons:
-	def_grass_wildmons 15 ; encounter rate
+	def_grass_wildmons 25 ; encounter rate
+	db 14, RATTATA    ; 19.9% chance
+	db 15, PIDGEY     ; 19.9% chance
+	db 16, RATTATA    ;  9.8% chance
 IF DEF(_RED)
-	db 13, ODDISH
-	db 13, PIDGEY
-	db 15, PIDGEY
-	db 10, MANKEY
-	db 12, MANKEY
-	db 15, ODDISH
-	db 16, ODDISH
-	db 16, PIDGEY
-	db 14, MANKEY
-	db 16, MANKEY
+	db 14, ODDISH     ;  9.8% chance
+	db 15, MANKEY     ;  9.8% chance
+	db 17, PIDGEY     ;  9.8% chance
+	db 15, GROWLITHE  ;  5.1% chance
+	db 16, ODDISH     ;  5.1% chance
+	db 16, GROWLITHE  ;  4.3% chance
+	db 17, MANKEY     ;  4.3% chance
+	db 16, MEOWTH     ;  1.2% chance
+	db 17, MANKEY     ;  1.2% chance
 ENDC
 IF DEF(_BLUE)
-	db 13, BELLSPROUT
-	db 13, PIDGEY
-	db 15, PIDGEY
-	db 10, MEOWTH
-	db 12, MEOWTH
-	db 15, BELLSPROUT
-	db 16, BELLSPROUT
-	db 16, PIDGEY
-	db 14, MEOWTH
-	db 16, MEOWTH
+	db 14, BELLSPROUT ;  9.8% chance
+	db 15, MEOWTH     ;  9.8% chance
+	db 17, PIDGEY     ;  9.8% chance
+	db 15, VULPIX     ;  5.1% chance
+	db 16, BELLSPROUT ;  5.1% chance
+	db 16, VULPIX     ;  4.3% chance
+	db 17, MEOWTH     ;  4.3% chance
+	db 16, MANKEY     ;  1.2% chance
+	db 17, MEOWTH     ;  1.2% chance
 ENDC
 	end_grass_wildmons
 

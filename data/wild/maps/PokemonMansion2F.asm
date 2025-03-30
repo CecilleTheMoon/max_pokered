@@ -1,28 +1,32 @@
 PokemonMansion2FWildMons:
 	def_grass_wildmons 10 ; encounter rate
 IF DEF(_RED)
-	db 32, GROWLITHE
-	db 34, KOFFING
-	db 34, KOFFING
-	db 30, PONYTA
-	db 30, KOFFING
-	db 32, PONYTA
-	db 30, GRIMER
-	db 28, PONYTA
-	db 39, WEEZING
-	db 37, MUK
+	db 32, KOFFING    ; 19.9% chance
+	db 33, SLUGMA     ; 19.9% chance
+	db 34, GROWLITHE  ;  9.8% chance
+	db 34, KOFFING    ;  9.8% chance
+	db 36, PONYTA     ;  9.8% chance
+	db 37, RATICATE   ;  9.8% chance
+	db 33, GRIMER     ;  5.1% chance
+	db 38, PONYTA     ;  5.1% chance
+	db 36, GROWLITHE  ;  4.3% chance
+	db 40, WEEZING    ;  4.3% chance
+	db 35, VULPIX     ;  1.2% chance
+	db 39, MUK        ;  1.2% chance
 ENDC
 IF DEF(_BLUE)
-	db 32, VULPIX
-	db 34, GRIMER
-	db 34, GRIMER
-	db 30, PONYTA
-	db 30, GRIMER
-	db 32, PONYTA
-	db 30, KOFFING
-	db 28, PONYTA
-	db 39, MUK
-	db 37, WEEZING
+	db 32, GRIMER     ; 19.9% chance
+	db 33, SLUGMA     ; 19.9% chance
+	db 34, VULPIX     ;  9.8% chance
+	db 34, GRIMER     ;  9.8% chance
+	db 36, PONYTA     ;  9.8% chance
+	db 37, RATICATE   ;  9.8% chance
+	db 33, KOFFING    ;  5.1% chance
+	db 38, PONYTA     ;  5.1% chance
+	db 36, VULPIX     ;  4.3% chance
+	db 40, MUK        ;  4.3% chance
+	db 35, GROWLITHE  ;  1.2% chance
+	db 39, WEEZING    ;  1.2% chance
 ENDC
 	end_grass_wildmons
 

@@ -1,21 +1,30 @@
 CeruleanCaveB1FWildMons:
-	def_grass_wildmons 25 ; encounter rate
-	db 55, RHYDON
-	db 55, MAROWAK
-	db 55, ELECTRODE
-	db 64, CHANSEY
-	db 64, PARASECT
-	db 64, RAICHU
-IF DEF(_RED)
-	db 57, ARBOK
-ENDC
-IF DEF(_BLUE)
-	db 57, SANDSLASH
-ENDC
-	db 65, DITTO
-	db 63, DITTO
-	db 67, DITTO
+	def_grass_wildmons 15 ; encounter rate
+	db 60, DITTO      ; 19.9% chance
+	db 61, CROBAT     ; 19.9% chance
+	db 61, CHANSEY    ;  9.8% chance
+	db 63, CROBAT     ;  9.8% chance
+	db 62, TAUROS     ;  9.8% chance
+	db 63, RHYPERIOR  ;  9.8% chance
+	db 64, TAUROS     ;  5.1% chance
+	db 65, SNORLAX    ;  5.1% chance
+	db 63, BLISSEY    ;  4.3% chance
+	db 65, AERODACTYL ;  4.3% chance
+	db 65, BLISSEY    ;  1.2% chance
+	db 65, AERODACTYL ;  1.2% chance
 	end_grass_wildmons
 
-	def_water_wildmons 0 ; encounter rate
+	def_water_wildmons 10 ; encounter rate
+	db 61, CROBAT     ; 19.9% chance
+	db 62, SLOWBRO    ; 19.9% chance
+	db 63, GOLDUCK    ;  9.8% chance
+	db 63, CROBAT     ;  9.8% chance
+	db 61, SLOWKING   ;  9.8% chance
+	db 63, GOLDUCK    ;  9.8% chance
+	db 63, SLOWKING   ;  5.1% chance
+	db 65, DRAGONITE  ;  5.1% chance
+	db 63, GYARADOS   ;  4.3% chance
+	db 64, LAPRAS     ;  4.3% chance
+	db 63, GYARADOS   ;  1.2% chance
+	db 64, LAPRAS     ;  1.2% chance
 	end_water_wildmons

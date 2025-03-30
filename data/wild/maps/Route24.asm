@@ -1,27 +1,45 @@
 Route24WildMons:
 	def_grass_wildmons 25 ; encounter rate
+	db 11, PIDGEY     ; 19.9% chance
 IF DEF(_RED)
-	db  7, WEEDLE
-	db  8, KAKUNA
-	db 12, PIDGEY
-	db 12, ODDISH
-	db 13, ODDISH
-	db 10, ABRA
-	db 14, ODDISH
+	db 12, ODDISH     ; 19.9% chance
+	db 13, PIDGEY     ;  9.8% chance
+	db 11, PSYDUCK    ;  9.8% chance
+	db 10, ABRA       ;  9.8% chance
+	db 13, MANKEY     ;  9.8% chance
+	db 13, PSYDUCK    ;  5.1% chance
+	db 14, VENONAT    ;  5.1% chance
+	db 12, ABRA       ;  4.3% chance
+	db 14, ODDISH     ;  4.3% chance
+	db 13, BELLSPROUT ;  1.2% chance
+	db 14, ODDISH     ;  1.2% chance
 ENDC
 IF DEF(_BLUE)
-	db  7, CATERPIE
-	db  8, METAPOD
-	db 12, PIDGEY
-	db 12, BELLSPROUT
-	db 13, BELLSPROUT
-	db 10, ABRA
-	db 14, BELLSPROUT
+	db 12, BELLSPROUT ; 19.9% chance
+	db 13, PIDGEY     ;  9.8% chance
+	db 11, PSYDUCK    ;  9.8% chance
+	db 10, ABRA       ;  9.8% chance
+	db 13, MEOWTH     ;  9.8% chance
+	db 13, PSYDUCK    ;  5.1% chance
+	db 14, VENONAT    ;  5.1% chance
+	db 12, ABRA       ;  4.3% chance
+	db 14, BELLSPROUT ;  4.3% chance
+	db 13, ODDISH     ;  1.2% chance
+	db 14, BELLSPROUT ;  1.2% chance
 ENDC
-	db 13, PIDGEY
-	db  8, ABRA
-	db 12, ABRA
 	end_grass_wildmons
 
-	def_water_wildmons 0 ; encounter rate
+	def_water_wildmons 10 ; encounter rate
+	db 26, TENTACOOL  ; 19.9% chance
+	db 26, GOLDEEN    ; 19.9% chance
+	db 26, TENTACOOL  ;  9.8% chance
+	db 29, GOLDEEN    ;  9.8% chance
+	db 27, PSYDUCK    ;  9.8% chance
+	db 29, TENTACOOL  ;  9.8% chance
+	db 30, PSYDUCK    ;  5.1% chance
+	db 35, SEAKING    ;  5.1% chance
+	db 33, GOLDUCK    ;  4.3% chance
+	db 35, TENTACRUEL ;  4.3% chance
+	db 33, GOLDUCK    ;  1.2% chance
+	db 35, TENTACRUEL ;  1.2% chance
 	end_water_wildmons

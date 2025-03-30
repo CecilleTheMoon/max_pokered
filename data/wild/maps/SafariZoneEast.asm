@@ -1,30 +1,37 @@
 SafariZoneEastWildMons:
 	def_grass_wildmons 30 ; encounter rate
+	db 23, PARAS      ; 19.9% chance
+	db 25, EXEGGCUTE  ; 19.9% chance
+	db 23, YANMA      ;  9.8% chance
+	db 25, DODUO      ;  9.8% chance
+	db 23, AIPOM      ;  9.8% chance
 IF DEF(_RED)
-	db 24, NIDORAN_M
-	db 26, DODUO
-	db 22, PARAS
-	db 25, EXEGGCUTE
-	db 33, NIDORINO
-	db 23, EXEGGCUTE
-	db 24, NIDORAN_F
-	db 25, PARASECT
-	db 25, KANGASKHAN
-	db 28, SCYTHER
+	db 28, SCYTHER    ;  9.8% chance
+	db 27, DODUO      ;  5.1% chance
+	db 27, PINSIR     ;  5.1% chance
 ENDC
 IF DEF(_BLUE)
-	db 24, NIDORAN_F
-	db 26, DODUO
-	db 22, PARAS
-	db 25, EXEGGCUTE
-	db 33, NIDORINA
-	db 23, EXEGGCUTE
-	db 24, NIDORAN_M
-	db 25, PARASECT
-	db 25, KANGASKHAN
-	db 28, PINSIR
+	db 28, PINSIR     ;  9.8% chance
+	db 27, DODUO      ;  5.1% chance
+	db 27, SCYTHER    ;  5.1% chance
 ENDC
+	db 29, CHANSEY    ;  4.3% chance
+	db 29, PARASECT   ;  4.3% chance
+	db 29, TAUROS     ;  1.2% chance
+	db 31, PARASECT   ;  1.2% chance
 	end_grass_wildmons
 
-	def_water_wildmons 0 ; encounter rate
+	def_water_wildmons 10 ; encounter rate
+	db 27, TENTACOOL  ; 19.9% chance
+	db 27, PSYDUCK    ; 19.9% chance
+	db 29, HORSEA     ;  9.8% chance
+	db 29, SEEL       ;  9.8% chance
+	db 29, SLOWPOKE   ;  9.8% chance
+	db 33, GOLDUCK    ;  9.8% chance
+	db 31, SLOWPOKE   ;  5.1% chance
+	db 31, SEEL       ;  5.1% chance
+	db 32, SEADRA     ;  4.3% chance
+	db 33, TENTACRUEL ;  4.3% chance
+	db 34, SEADRA     ;  1.2% chance
+	db 35, TENTACRUEL ;  1.2% chance
 	end_water_wildmons
