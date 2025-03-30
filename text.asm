@@ -117,6 +117,7 @@ INCLUDE "text/Route11.asm"
 
 SECTION "Text 5", ROMX
 
+INCLUDE "text/VictoryRoadB1F.asm"
 INCLUDE "text/Route11_2.asm"
 INCLUDE "text/Route12.asm"
 INCLUDE "text/Route13.asm"

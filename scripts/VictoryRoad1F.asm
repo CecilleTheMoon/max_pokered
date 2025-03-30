@@ -48,6 +48,7 @@ VictoryRoad1F_TextPointers:
 	dw_const BoulderText,                   TEXT_VICTORYROAD1F_BOULDER1
 	dw_const BoulderText,                   TEXT_VICTORYROAD1F_BOULDER2
 	dw_const BoulderText,                   TEXT_VICTORYROAD1F_BOULDER3
+	dw_const BoulderText,                   TEXT_VICTORYROAD1F_BOULDER4
 
 VictoryRoad1TrainerHeaders:
 	def_trainers

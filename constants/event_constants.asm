@@ -486,7 +486,7 @@
 	const EVENT_BEAT_VICTORY_ROAD_2_TRAINER_2
 	const EVENT_BEAT_VICTORY_ROAD_2_TRAINER_3
 	const EVENT_BEAT_VICTORY_ROAD_2_TRAINER_4
-	const EVENT_BEAT_MOLTRES
+	const_skip
 	const EVENT_VICTORY_ROAD_2_BOULDER_ON_SWITCH2
 
 ; Route 24 events
@@ -744,6 +744,11 @@ DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 	const EVENT_BEAT_VICTORY_ROAD_1_TRAINER_1
 	const_skip 4
 	const EVENT_VICTORY_ROAD_1_BOULDER_ON_SWITCH
+
+; Victory Road B1F events
+	const_next $920
+	const_skip
+	const EVENT_BEAT_MOLTRES
 
 ; Rock Tunnel events
 	const_next $9B0
