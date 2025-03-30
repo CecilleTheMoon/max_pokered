@@ -80,6 +80,8 @@ InternalMapEntries:
 	internal_map VICTORY_ROAD_1F,                0,  4, VictoryRoadName
 	internal_map VICTORY_ROAD_B1F,               0,  4, VictoryRoadName
 	internal_map VICTORY_ROAD_OAKS_ROOM,         0,  4, VictoryRoadName
+	internal_map VIRIDIAN_OLD_ROD_HOUSE,         2,  8, ViridianCityName
+	internal_map CERULEAN_GOOD_ROD_HOUSE,       10,  2, CeruleanCityName
 	internal_map HALL_OF_FAME,                   0,  2, PokemonLeagueName
 	internal_map UNDERGROUND_PATH_NORTH_SOUTH,  10,  5, UndergroundPathName
 	internal_map CHAMPIONS_ROOM,                 0,  2, PokemonLeagueName
@@ -92,15 +94,15 @@ InternalMapEntries:
 	internal_map SAFARI_ZONE_GATE,               8, 12, SafariZoneName
 	internal_map FUCHSIA_MEETING_ROOM,           8, 13, FuchsiaCityName
 	internal_map SEAFOAM_ISLANDS_B4F,            5, 15, SeafoamIslandsName
-	internal_map VERMILION_OLD_ROD_HOUSE,       10,  9, VermilionCityName
-	internal_map FUCHSIA_GOOD_ROD_HOUSE,         8, 13, FuchsiaCityName
+	internal_map VERMILION_SPRAYDUCK_HOUSE,     10,  9, VermilionCityName
+	internal_map FUCHSIA_SUPER_ROD_HOUSE,         8, 13, FuchsiaCityName
 	internal_map POKEMON_MANSION_1F,             2, 15, PokemonMansionName
 	internal_map CINNABAR_MART_COPY,             2, 15, CinnabarIslandName
 	internal_map INDIGO_PLATEAU_LOBBY,           0,  2, IndigoPlateauName
 	internal_map MR_PSYCHICS_HOUSE,             10,  5, SaffronCityName
 	internal_map ROUTE_15_GATE_2F,               9, 13, Route15Name
 	internal_map ROUTE_16_FLY_HOUSE,             4,  5, Route16Name
-	internal_map ROUTE_12_SUPER_ROD_HOUSE,      14, 10, Route12Name
+	internal_map ROUTE_12_HOUSE,                14, 10, Route12Name
 	internal_map ROUTE_18_GATE_2F,               7, 13, Route18Name
 	internal_map SEAFOAM_ISLANDS_1F,             5, 15, SeafoamIslandsName
 	internal_map ROUTE_22_GATE,                  0,  7, Route22Name

@@ -1,11 +1,11 @@
-VermilionOldRodHouse_Script:
+ViridianOldRodHouse_Script:
 	jp EnableAutoTextBoxDrawing
 
-VermilionOldRodHouse_TextPointers:
+ViridianOldRodHouse_TextPointers:
 	def_text_pointers
-	dw_const VermilionOldRodHouseFishingGuruText, TEXT_VERMILIONOLDRODHOUSE_FISHING_GURU
+	dw_const ViridianOldRodHouseFishingGuruText, TEXT_VIRIDIANOLDRODHOUSE_FISHING_GURU
 
-VermilionOldRodHouseFishingGuruText:
+ViridianOldRodHouseFishingGuruText:
 	text_asm
 	ld a, [wStatusFlags1]
 	bit BIT_GOT_OLD_ROD, a
@@ -36,23 +36,23 @@ VermilionOldRodHouseFishingGuruText:
 	jp TextScriptEnd
 
 .DoYouLikeToFishText:
-	text_far _VermilionOldRodHouseFishingGuruDoYouLikeToFishText
+	text_far _ViridianOldRodHouseFishingGuruDoYouLikeToFishText
 	text_end
 
 .TakeThisText:
-	text_far _VermilionOldRodHouseFishingGuruTakeThisText
+	text_far _ViridianOldRodHouseFishingGuruTakeThisText
 	sound_get_item_1
-	text_far _VermilionOldRodHouseFishingGuruFishingIsAWayOfLifeText
+	text_far _ViridianOldRodHouseFishingGuruFishingIsAWayOfLifeText
 	text_end
 
 .ThatsSoDisappointingText:
-	text_far _VermilionOldRodHouseFishingGuruThatsSoDisappointingText
+	text_far _ViridianOldRodHouseFishingGuruThatsSoDisappointingText
 	text_end
 
 .HowAreTheFishBitingText:
-	text_far _VermilionOldRodHouseFishingGuruHowAreTheFishBitingText
+	text_far _ViridianOldRodHouseFishingGuruHowAreTheFishBitingText
 	text_end
 
 .NoRoomText:
-	text_far _VermilionOldRodHouseFishingGuruNoRoomText
+	text_far _ViridianOldRodHouseFishingGuruNoRoomText
 	text_end

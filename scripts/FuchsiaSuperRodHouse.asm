@@ -1,11 +1,11 @@
-Route12SuperRodHouse_Script:
+FuchsiaSuperRodHouse_Script:
 	jp EnableAutoTextBoxDrawing
 
-Route12SuperRodHouse_TextPointers:
+FuchsiaSuperRodHouse_TextPointers:
 	def_text_pointers
-	dw_const Route12SuperRodHouseFishingGuruText, TEXT_ROUTE12SUPERRODHOUSE_FISHING_GURU
+	dw_const FuchsiaSuperRodHouseFishingGuruText, TEXT_FUCHSIASUPERRODHOUSE_FISHING_GURU
 
-Route12SuperRodHouseFishingGuruText:
+FuchsiaSuperRodHouseFishingGuruText:
 	text_asm
 	ld a, [wStatusFlags1]
 	bit BIT_GOT_SUPER_ROD, a
@@ -27,7 +27,7 @@ Route12SuperRodHouseFishingGuruText:
 	ld hl, .NoRoomText
 	jr .done
 .refused
-	ld hl, .ThatsDisappointingText
+	ld hl, .ThatsSoDisappointingText
 	jr .done
 .got_item
 	ld hl, .TryFishingText
@@ -36,23 +36,23 @@ Route12SuperRodHouseFishingGuruText:
 	jp TextScriptEnd
 
 .DoYouLikeToFishText:
-	text_far _Route12SuperRodHouseFishingGuruDoYouLikeToFishText
+	text_far _FuchsiaSuperRodHouseFishingGuruDoYouLikeToFishText
 	text_end
 
 .ReceivedSuperRodText:
-	text_far _Route12SuperRodHouseFishingGuruReceivedSuperRodText
+	text_far _FuchsiaSuperRodHouseFishingGuruReceivedSuperRodText
 	sound_get_item_1
-	text_far _Route12SuperRodHouseFishingGuruFishingWayOfLifeText
+	text_far _FuchsiaSuperRodHouseFishingGuruFishingWayOfLifeText
 	text_end
 
-.ThatsDisappointingText:
-	text_far _Route12SuperRodHouseFishingGuruThatsDisappointingText
+.ThatsSoDisappointingText:
+	text_far _FuchsiaSuperRodHouseFishingGuruThatsDisappointingText
 	text_end
 
 .TryFishingText:
-	text_far _Route12SuperRodHouseFishingGuruTryFishingText
+	text_far _FuchsiaSuperRodHouseFishingGuruTryFishingText
 	text_end
 
 .NoRoomText:
-	text_far _Route12SuperRodHouseFishingGuruNoRoomText
+	text_far _FuchsiaSuperRodHouseFishingGuruNoRoomText
 	text_end

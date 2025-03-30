@@ -165,6 +165,13 @@ _ViridianCityTrainerTips2Text::
 	cont "#MON CENTER!"
 	done
 
+_ViridianCityTrainersSchoolSignText::
+	text "#MON ACADEMY"
+
+	para "Learn everything"
+	line "about #MON!"
+	done
+
 _ViridianCityGymSignText::
 	text "VIRIDIAN CITY"
 	line "#MON GYM"

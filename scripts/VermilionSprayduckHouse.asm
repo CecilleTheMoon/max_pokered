@@ -1,0 +1,5 @@
+VermilionSprayduckHouse_Script:
+	jp EnableAutoTextBoxDrawing
+
+VermilionSprayduckHouse_TextPointers:
+	def_text_pointers

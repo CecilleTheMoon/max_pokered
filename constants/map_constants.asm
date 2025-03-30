@@ -130,8 +130,8 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const VICTORY_ROAD_1F,               10, 11 ; $6C
 	map_const VICTORY_ROAD_B1F,              11, 10 ; $6D
 	map_const VICTORY_ROAD_OAKS_ROOM,        11, 10 ; $6E
-	map_const UNUSED_MAP_6F,                  0,  0 ; $6F
-	map_const UNUSED_MAP_70,                  0,  0 ; $70
+	map_const VIRIDIAN_OLD_ROD_HOUSE,         4,  4 ; $6F
+	map_const CERULEAN_GOOD_ROD_HOUSE,        4,  4 ; $70
 	map_const LANCES_ROOM,                   13, 13 ; $71
 	map_const UNUSED_MAP_72,                  0,  0 ; $72
 	map_const UNUSED_MAP_73,                  0,  0 ; $73
@@ -182,8 +182,8 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const SEAFOAM_ISLANDS_B2F,           15,  9 ; $A0
 	map_const SEAFOAM_ISLANDS_B3F,           15,  9 ; $A1
 	map_const SEAFOAM_ISLANDS_B4F,           15,  9 ; $A2
-	map_const VERMILION_OLD_ROD_HOUSE,        4,  4 ; $A3
-	map_const FUCHSIA_GOOD_ROD_HOUSE,         4,  4 ; $A4
+	map_const VERMILION_SPRAYDUCK_HOUSE,      4,  4 ; $A3
+	map_const FUCHSIA_SUPER_ROD_HOUSE,        4,  4 ; $A4
 	map_const POKEMON_MANSION_1F,            15, 14 ; $A5
 	map_const CINNABAR_GYM,                  10,  9 ; $A6
 	map_const CINNABAR_LAB,                   9,  4 ; $A7
@@ -208,7 +208,7 @@ DEF FIRST_INDOOR_MAP EQU const_value
 	map_const ROUTE_16_GATE_1F,               4,  7 ; $BA
 	map_const ROUTE_16_GATE_2F,               4,  4 ; $BB
 	map_const ROUTE_16_FLY_HOUSE,             4,  4 ; $BC
-	map_const ROUTE_12_SUPER_ROD_HOUSE,       4,  4 ; $BD
+	map_const ROUTE_12_HOUSE,                 4,  4 ; $BD
 	map_const ROUTE_18_GATE_1F,               4,  5 ; $BE
 	map_const ROUTE_18_GATE_2F,               4,  4 ; $BF
 	map_const SEAFOAM_ISLANDS_1F,            15,  9 ; $C0

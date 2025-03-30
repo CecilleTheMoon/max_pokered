@@ -709,11 +709,13 @@ INCLUDE "data/maps/headers/Route21.asm"
 INCLUDE "data/maps/objects/Route21.asm"
 Route21_Blocks: INCBIN "maps/Route21.blk"
 
-VermilionOldRodHouse_Blocks:
-Route12SuperRodHouse_Blocks:
+ViridianOldRodHouse_Blocks:
+VermilionSprayduckHouse_Blocks:
+Route12House_Blocks:
 Daycare_Blocks: INCBIN "maps/Daycare.blk"
 
-FuchsiaGoodRodHouse_Blocks: INCBIN "maps/FuchsiaGoodRodHouse.blk"
+CeruleanGoodRodHouse_Blocks:
+FuchsiaSuperRodHouse_Blocks: INCBIN "maps/FuchsiaSuperRodHouse.blk"
 
 
 SECTION "Maps 12", ROMX
@@ -729,26 +731,34 @@ INCLUDE "scripts/Route17.asm"
 INCLUDE "scripts/Route19.asm"
 INCLUDE "scripts/Route21.asm"
 
-INCLUDE "data/maps/headers/VermilionOldRodHouse.asm"
-INCLUDE "scripts/VermilionOldRodHouse.asm"
-INCLUDE "data/maps/objects/VermilionOldRodHouse.asm"
+INCLUDE "data/maps/headers/ViridianOldRodHouse.asm"
+INCLUDE "scripts/ViridianOldRodHouse.asm"
+INCLUDE "data/maps/objects/ViridianOldRodHouse.asm"
+
+INCLUDE "data/maps/headers/VermilionSprayduckHouse.asm"
+INCLUDE "scripts/VermilionSprayduckHouse.asm"
+INCLUDE "data/maps/objects/VermilionSprayduckHouse.asm"
 
 INCLUDE "data/maps/headers/CeladonMart2F.asm"
 INCLUDE "scripts/CeladonMart2F.asm"
 INCLUDE "data/maps/objects/CeladonMart2F.asm"
 CeladonMart2F_Blocks: INCBIN "maps/CeladonMart2F.blk"
 
-INCLUDE "data/maps/headers/FuchsiaGoodRodHouse.asm"
-INCLUDE "scripts/FuchsiaGoodRodHouse.asm"
-INCLUDE "data/maps/objects/FuchsiaGoodRodHouse.asm"
+INCLUDE "data/maps/headers/CeruleanGoodRodHouse.asm"
+INCLUDE "scripts/CeruleanGoodRodHouse.asm"
+INCLUDE "data/maps/objects/CeruleanGoodRodHouse.asm"
+
+INCLUDE "data/maps/headers/FuchsiaSuperRodHouse.asm"
+INCLUDE "scripts/FuchsiaSuperRodHouse.asm"
+INCLUDE "data/maps/objects/FuchsiaSuperRodHouse.asm"
 
 INCLUDE "data/maps/headers/Daycare.asm"
 INCLUDE "scripts/Daycare.asm"
 INCLUDE "data/maps/objects/Daycare.asm"
 
-INCLUDE "data/maps/headers/Route12SuperRodHouse.asm"
-INCLUDE "scripts/Route12SuperRodHouse.asm"
-INCLUDE "data/maps/objects/Route12SuperRodHouse.asm"
+INCLUDE "data/maps/headers/Route12House.asm"
+INCLUDE "scripts/Route12House.asm"
+INCLUDE "data/maps/objects/Route12House.asm"
 
 INCLUDE "data/maps/headers/SilphCo8F.asm"
 INCLUDE "scripts/SilphCo8F.asm"
